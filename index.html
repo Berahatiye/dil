@@ -56,7 +56,7 @@
     
 
      <div class="inin">
-        <p class="bottom">Berat Can TURSUN | 2022-2023</p>
+        <p class="bottom" onclick="location.href='https://www.facebook.com/profile.php?id=100093580601707&mibextid=ZbWKwL'">Berat Can TURSUN | 2022-2023</p>
      </div>
 
 <script>
@@ -131,6 +131,180 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".toggle");
+      const listItems = document.querySelectorAll(".list-item");
+      const originalContent = document.querySelector(".izah");
+      const izParagraph = document.querySelector(".iz");
+      const replacementContent = `<p><b>ALMANCA DEYİMLER</b></p>
+      <p>Bütün deyimleri ne yazık ki barındırmaz.</p>
+      <p><b>Mir fällt nichts ein:</b> Anlamıyorum.</p>
+      <p><b>Mit Engelsgeduld:</b> Eyüp Sultan sabrıyla.</p>
+      <p><b>Der Faden verlieren:</b> Delirmek.</p>
+      <p><b>Alles in Butter:</b> Yerli yerinde.</p>
+      <p><b>Äpfel mit Birnen vergleichen:</b> Sapla samanı ayırt etmek/Elmalarla armutlar kıyaslanamaz.</p>
+      <p><b>Am seidenen Faden hängen:</b> Topun ağzında olmak.</p>
+      <p><b>Der Affe laust mich:</b> Bir yaşıma daha girdim.</p>
+      <p><b>Pech gehabt:</b> Kötü Talih.</p>
+      <p><b>Mit Kannonen auf Spatzen schießen:</b> Kuşlara toplarla saldırmak.</p>
+      <p><b>Murphy's gesetz:</b> Aksilik yasası.</p>
+      <p><b>Mit allen wassern gewaschen:</b> Kitabını yazmak.</p>
+      <p><b>Mir fällt ein Stein vom Herzen:</b> Yüreğime su serpildi.</p>
+      <p><b>Lampenfieber:</b> Sahne heyecanı/korkusu.</p>
+      <p><b>Jemanden die Leviten:</b> Birisine temiz fırça çekmek. <b>MUAMMA; TURSUN'UN NOTU:</b> (kitab-ı mukkadeste Levililer bölümü konu alınmıştır??)</p>
+      <p><b>Paroli bieten:</b> Efelenmek. <b>MAHİYET; TURSUN'UN NOTU:</b> Paroli; bir kumar sistemidir.</p>
+      <p><b>Lunte riechen:</b> Bir bit yeniği sezmek .</p>
+      <p><b>Pünktlich wie die Maurer:</b> Dakikası dakikasına (Mason gibi).</p>
+      <p><b>Das ist mir Wurst:</b> Takmıyorum.</p>
+      <p><b>Ich verstehe nur Bahnhof:</b> Anladıysam Arap olayım.</p>
+      <p><b>Ich glaub mein Schwein:</b> Vay Vay Vay(Şaşırma).</p>
+      <p><b>Mein Fehler:</b> Benim hatam.</p>
+      <p><b>Fix und Fertig sein:</b> Turşusu çıkmak.</p>
+      <p><b>Nach Schema F:</b> (rutin) Yasalara göre.</p>
+      <p><b>Nigelnagelneu sein:</b> Yepyeni olmak.</p>
+      <p><b>Wie der Schneider von Ulm sein:</b> Ulm terzisi gibi olmak.(Albrecht Berblinger)</p>
+      <p><b>Wie im Schlaraffenland leben:</b> Bir eli balda bir eli yağda.(Yer: Kokanya)</p>
+      <p><b>Wie Gott in Frankreich leben:</b> Lüks içinde yaşamak.</p>
+      <p><b>Wolf im Schafpelz:</b> Koyun postuna bürünmüş kurt.</p>
+      <p><b>Wie Kraut und Rüben:</b> Allak bullak.</p>`;
+      let isReplaced = false;
+
+      listItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          if (item.getAttribute("data-content") === "deyim") {
+            if (!isReplaced) {
+              originalContent.innerHTML = replacementContent;
+              izParagraph.textContent = "DEYİMLER";
+              isReplaced = true;
+            }
+          }
+        });
+      });
+
+      toggleButton.addEventListener("click", () => {
+        if (isReplaced) {
+          originalContent.innerHTML = replacementContent;
+          izParagraph.textContent = "DEYİMLER";
+        } else {
+          originalContent.innerHTML = "";
+          izParagraph.textContent = "İZAH:";
+        }
+      });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".toggle");
+      const listItems = document.querySelectorAll(".list-item");
+      const originalContent = document.querySelector(".izah");
+      const izParagraph = document.querySelector(".iz");
+      const replacementContent = `<p><b>ALMANCA ATASÖZLERİ</b></p>
+
+<p>Bu bölümün tek mahiyeti Türkçe bilen insanların Almanca atasözlerini anlamasına yönelik bir basamak oluşturmaktr. Bunun yolu elbet kelimelerin özgün anlamlarını araştırarak olabilir. Fakat bu sözlerin bireyin kendi külütüründe hangi söze tekabul ettiğini belirtmenin, anlamaya yönelik bir basamak oluşturabileceği bu çalışmada zannedilmiştir. Ve evet, bütün Almanca atasözleri ne yazık ki burada belirtilmemiştir: Eserin mahdut bir şerh olmasının sebeblerinden birisi de budur.</p>
+
+<p><b>Hochmut kommt vor dem Fall:</b> Kibir düşüşten evvel gerçekleşir.</p>
+
+<p><b>Es ist nicht alles Gold, was glänzt.</b> Parlayan her şey altın değildir.</p>
+
+<p><b>Der Äpfel fällt nicht weit vom Stamm:</b> Armut dibine düşermiş.</p>
+
+<p><b>Ausnahmen bestätigen die Regel:</b> İstisnalar kaideyi bozmaz.</p>
+
+<p><b>Aller Anfang ist schwer:</b> Bütün başlangıçlar güçtür.</p>
+
+<p><b>Morgenstund hat Gold im Mund:</b> Erkenci kuş solucanı yakalar.</p>
+
+<p><b>Wer rastet, der rostet:</b> Yuvarlanan taş yosun tutmaz.</p>
+
+
+<p><b>Wo gehobelt wird, da fallen Späne:</b> Gülü seven dikenine katlanır.</p>
+
+<p><b>Kindermund tut Wahrheit kund:</b> Çocuktan al haberi.</p>
+
+<p><b>Der Ton mach die Musik:</b> Ses tonu güdüdür.</p>
+
+<p><b>Was Hänschen nicht lernt, lernt Hans nimmermehr:</b> İhtiyar köpeğe yeni hüner öğretilemez.</p>
+
+<p><b>Der Fisch stinkt vom Kopf her:</b> Balık basştan kokar.</p>
+
+<p><b>was du Heute kannst besorgen, das verschiebe nicht auf Morgen:</b> Bugünün işini yarına bırakma.</p>
+
+<p><b>Viele Köche verderben den Brei:</b> Birden fazla el yemeği bozar.</p>
+
+<p><b>Wenn zwei sich streiten, freutscih der Dritte:</b> İkisi kavga ediyorsa, üçüncü bayram eder.</p>
+
+<p><b>Reden ist Silber, Schweigen ist Gold.:</b> Söz gümüşse sükut altındır.</p>
+
+<p><b>Kleider machen Leute:</b> Kıyafetler insanı baştan yapar.</p>
+
+<p><b>Wer anderen eine Grube gräbt, fällt selbst hinein:</b> Zarar veren zarar alır.</p>
+
+<p><b>Lieber dne Spatz in der Hand als die Tuabe auf dem Dach:</b> Eldeki bir kuş çalılıkta iki eder.</p>
+
+<p><b>Alle Wege führ nach Rom:</b> Bütün yollar romaya çıkar.</p>
+
+<p><b>Man soll den Tag nicht vor dem Abend loben:</b> Dereyi görmeden paçaları sıvamak.</p>
+
+<p><b>Einem geschenkten Gaul schaut man nicht ins Maul:</b> Beleş atın dişine bakılmaz.</p>
+
+<p><b>Eine Hand wäscht die andere:</b> Bir el diğerini yıkar.</p>
+
+<p><b>Kleinvieh macht auch Mist:</b> Damlaya damlaya göl olur.</p>
+
+<p><b>Wer im Glashaus sitzt, sollte nicht mit Steinen werfen:</b> Dinime küfreden bari müslüman olsa.<b>İZAH</b>(Asıl nosyon emin olmaktır: Bu herhangi işte veya konuda bilgi sahibi olmak olabilir.)</p>
+
+<p><b>Die Katze lässt das Mausen nicht:</b> Can çıkar huy çıkmaz.</p>
+
+<p><b>Wer zuerst kommt, mahlt zuerst:</b> Erken kalkan yol alır.</p>
+
+<p><b>Andere länder,andere Sitten:</b> Farklı ülkeler, farklı kültürler.</p>
+
+`;
+      let isReplaced = false;
+
+      listItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          if (item.getAttribute("data-content") === "soz") {
+            if (!isReplaced) {
+              originalContent.innerHTML = replacementContent;
+              izParagraph.textContent = "ALMANCA ATASÖZLERİ";
+              isReplaced = true;
+            }
+          }
+        });
+      });
+
+      toggleButton.addEventListener("click", () => {
+        if (isReplaced) {
+          originalContent.innerHTML = replacementContent;
+          izParagraph.textContent = "Almanya ve Avrupa İklimi – Das Klima in Deutschland-Europa";
+        } else {
+          originalContent.innerHTML = "";
+          izParagraph.textContent = "İZAH:";
+        }
+      });
+});
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
       const toggleButton = document.querySelector(".toggle");
       const listItems = document.querySelectorAll(".list-item");
@@ -183,157 +357,44 @@ Alman nüfusu içinde aşırı kilonun artması nedeniyle, Alman spor Federasyon
 
 
 
-
-
-
-
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
       const toggleButton = document.querySelector(".toggle");
       const listItems = document.querySelectorAll(".list-item");
       const originalContent = document.querySelector(".izah");
       const izParagraph = document.querySelector(".iz");
-      const replacementContent = `<p>KAlmanya Ülkesinde Spor
-Taban sporu için destek esas olarak belediyelerden ve eyaletlerden geliyor. Almanya’da spor yaklaşık 91.000 jimnastik ve spor kulübü tarafından organize edilmektedir. Yaklaşık 24 milyon üyesi için spor, sağlıklı bir yaşam tarzını teşvik eder, topluluk oluşturur ve bağlılık, güvenilirlik, takım ruhu, adil oyun ve hoşgörü gibi değerleri aktarır.
+      const replacementContent = `<p><b>ALMANYA ÜLKESİNDE KUTLANAN RESMÎ GÜNLER</b></p>
 
-Allensbach pazar ve reklam ortamı analizine göre, Futbol 2022 yılında Almanya’da en popüler spordur: ankete katılan Almanların yaklaşık yüzde 30’u özellikle futbola ilgi duyduğunu söyledi. Bu arada, yaklaşık yüzde 13’ü kayakla atlama sporuna özel ilgi gösterirken, yaklaşık yüzde 12’si özellikle Biatlon’a ilgi duyuyordu. Televizyonda spor yayınlarını veya spor programlarını izlemeyi seven insan sayısı 17,57 milyon civarında</p>
-      <p>Alman Spor Geçmişi
-1780-1815 yılları arasında idealist bir insan imajı ve yeni bir eğitim ideali ortaya çıktı. Burada spor ve özellikle Jimnastik önemli bir rol oynamaktadır. 1785 yılından itibaren Johann Friedrich Gutsmuth, Schnepfenthal Eğitim kurumunda pedagojik Jimnastik ve böylece ilk planlı okul Beden eğitimini geliştirdi. Alman Jimnastik hareketinin Başlatıcısı olarak kabul edilen Jimnastiğin babası “Jahn” olarak da bilinen Friedrich Ludwig Jahn, 1808’de bu hareketi doğrudan kaynakta inceledi. 1809’dan itibaren Jahn, Grau Manastırı’nda öğretmen olarak çalıştı. Orada öğrencilerini fiziksel egzersizlere, oyunlara ve açık hava hareketlerine tanıtmaya başlar.
+<p>Almanya Federal Devleti eyaletler ile yönetildiğinden ve resmî günler eyaletlere göre farklılık gösterdiği için bu bölüm eyaletlere göre ayrılmıştır.</p>
 
-Nazi partisinde, Alman işçi cephesinde, SA’DA, SS’DE ve Hitler Gençliği’nde spor kısmen zorunlu olarak uygulanmaktadır. Bu, ilk başta kulüplerdeki sayıların keskin bir şekilde düşmesine neden oldu. Avusturya ve Sudetenland’ın(Çekya) ilhak edilmesi nedeniyle, rakamlar kısmen tekrar keskin bir şekilde artmaktadır. 1939’dan itibaren savaş sonunda erkek üyelerin kaybına yol açtı. Birinci Dünya Savaşı’nda olduğu gibi, kadın Sporları da yeniden canlanıyor. 1938-1939 yılları arasında örgütler NSDAP’A bağımlı Parti hücreleri haline gelir ve bağımsızlıklarını kaybeder.
+<p><b>Epifani Yortusu - Heilige Drei Könige:</b> Baden, Württemberg, Bavyera, Saksonya Anhalt kutlar.</p>
 
-Savaşın sona ermesinden sonra, ilk olarak örgütlerin NSDAP’IN Parti hücreleri olarak Yasaklanması ve görevlilerin Denazifikasyonu söz konusudur. Bu nedenle, kulüplerin yeniden kurulması öncelikle bölgesel olarak gerçekleşir. Savaş sırasında ve Harabelerde yıllarca süren sıkıntılardan sonra, Aralık 1950’de Alman spor Federasyonu’nun (DSB) kurulması, yeni bir başlangıcın umut verici işaretlerinden biridir. Federal Almanya Cumhuriyeti’nin tüm spor ve spor kulüplerine aittir. Bu, Turner Birliği kampındaki uzun süren en şiddetli çatışmalardan sonra barışın geri dönmesine ve Alman Turnerbund’un büyük bir yükseliş yaşamasına neden oluyor. 1957 yılında Alman Jimnastik ve spor Federasyonu (DTSB) kuruldu.
+<p><b>Kutsal Cuma - Karfreitag:</b> Bütün eyaletler kutlar.</p>
 
-Alman nüfusu içinde aşırı kilonun artması nedeniyle, Alman spor Federasyonu (DSB) 1970 yılında “Trimm Dich – Durch Sport”adlı hastalık önleme kampanyasını başlattı. Yirmi yıldan fazla bir süredir Slogan, daha fazla hareket etmek için talep ve teşviktir. 90’lı yıllardan bu yana, spor konusu çocuk, kadın, yaşlı, Göç ve Kapsayıcılık Teşviki bağlamında da büyük önem taşımaktadır. Bu nedenle, spor kulüplerinde farklı ilgi grupları için çok yönlü bir teklif var.</p>
-      <p>KAYNAKLAR
+<p><b>Paskalya Pazarı - Ostersonntag:</b> Brandenburg kutlar.</p>
 
-1- https://de.statista.com/statistik/daten/studie/171072/umfrage/sportarten-fuer-die-besonderes-interesse-besteht/
+<p><b>Paskalya Pazartesisi - Ostermontag:</b> Bütün eyaletler kutlar.</p>
 
-2- https://www.bmi.bund.de/DE/themen/sport/sport-node.html
+<p><b>Yükseliş Günü - Christi Himmelfahrt:</b> Bütün eyaletler kutlar.</p>
 
-3- https://www.freisport.de/geschichte-breitensport-deutschland/</p>`;
-      let isReplaced = false;
+<p><b>Hamsin Yortusu - Pfingstsonntag:</b> Brandenburg kutlar.</p>
 
-      listItems.forEach((item) => {
-        item.addEventListener("click", () => {
-          if (item.getAttribute("data-content") === "spor") {
-            if (!isReplaced) {
-              originalContent.innerHTML = replacementContent;
-              izParagraph.textContent = "SPOR";
-              isReplaced = true;
-            }
-          }
-        });
-      });
+<p><b>Hamsin Pazartesisi - Pfingstmontag:</b> Bütün eyaletle kutlar.</p>
 
-      toggleButton.addEventListener("click", () => {
-        if (isReplaced) {
-          originalContent.innerHTML = replacementContent;
-          izParagraph.textContent = "SPOR";
-        } else {
-          originalContent.innerHTML = "";
-          izParagraph.textContent = "İZAH:";
-        }
-      });
-});
+<p><b>Katolik Yortusu - Fronleichnam oder Corpus Christi:</b> Baden Württemberg, Bavyera, Hessen, Kuzey Ren Vestfalya, Renanya Palatina, Saarland, Saksonya, Thüringen kutlar.</p>
 
+<p><b>Meryem’in Göğe Çıkışı - Mariä Himmelfahrt:</b> Bavyera ve Saaland kutlar.</p>
 
+<p><b>Alman Birliği Günü-Tag der deutschen Einheit:</b> Bütün eyaletler kutlar.</p>
 
+<p><b>Reformasyon Günü - Reformationstag:</b> Brandenburg, Hamburg, Aşağı Saksonya, Mecklenburg Vorpommern, Saksonya, Saksonya Anhalt, Thüringen, Schleswig Holstein kutlar.</p>
 
+<p><b>Azizler Günü - Allerheiligen:</b> Brandenburg, Hamburg, Aşağı Saksonya, Mecklenburg Vorpommern, Saksonya, Saksonya Anhalt, Thüringen, Schleswig Holstein kutlar.</p>
 
-document.addEventListener("DOMContentLoaded", function () {
-      const toggleButton = document.querySelector(".toggle");
-      const listItems = document.querySelectorAll(".list-item");
-      const originalContent = document.querySelector(".izah");
-      const izParagraph = document.querySelector(".iz");
-      const replacementContent = `<p>ALMANYA ÜLKESİNDE KUTLANAN RESMÎ GÜNLER
+<p><b>Dua ve Tövbe Günü - Buß und Bettag:</b> Saksonya eyaleti  kutlar.</p>
 
-Almanya Federal Devleti eyaletler ile yönetildiğinden ve resmî günler eyaletlere göre farklılık gösterdiği için bu bölüm eyaletlere göre ayrılmıştır.
+<p><b>Noel Günü - Erster Weihnachtstag:</b> Bütün eyaletler kutlar.</p>
 
-Epifani Yortusu - Heilige Drei Könige:
-
-Baden,
-
-Württemberg,
-
-Bavyera,
-
-Saksonya Anhalt kutlar.
-
-Kutsal Cuma - Karfreitag: Bütün eyaletler kutlar.
-
-Paskalya Pazarı - Ostersonntag: Brandenburg kutlar.
-
-Paskalya Pazartesisi - Ostermontag: Bütün eyaletler kutlar.
-
-Yükseliş Günü - Christi Himmelfahrt: Bütün eyaletler kutlar.
-
-Hamsin Yortusu - Pfingstsonntag: Brandenburg kutlar.
-
-Hamsin Pazartesisi - Pfingstmontag: Bütün eyaletle kutlar.
-
-Katolik Yortusu - Fronleichnam oder Corpus Christi: Baden Württemberg
-
-Bavyera
-
-Hessen
-
-Kuzey Ren Vestfalya
-
-Renanya Palatina
-
-Saarland
-
-Saksonya
-
-Thüringen kutlar.
-
-Meryem’in Göğe Çıkışı - Mariä Himmelfahrt: Bavyera ve Saaland kutlar.
-
-Alman Birliği Günü-Tag der deutschen Einheit: Bütün eyaletler kutlar.
-
-Reformasyon Günü - Reformationstag: Brandenburg,
-
-Hamburg,
-
-Aşağı Saksonya,
-
-Mecklenburg Vorpommern,
-
-Saksonya,
-
-Saksonya Anhalt,
-
-Thüringen,
-
-Schleswig Holstein kutlar.
-
-Azizler Günü - Allerheiligen: Brandenburg,
-
-Hamburg,
-
-Aşağı Saksonya,
-
-Mecklenburg Vorpommern,
-
-Saksonya,
-
-Saksonya Anhalt,
-
-Thüringen,
-
-Schleswig Holstein kutlar.
-
-Dua ve Tövbe Günü - Buß und Bettag: Saksonya eyaleti  kutlar.
-
-Noel Günü - Erster Weihnachtstag: Bütün eyaletler kutlar.
-
-Noel Ertesi Günü - Zweiter Weihnachtstag: Bütün eyaletler kutlar.</p>`;
+<p><b>Noel Ertesi Günü - Zweiter Weihnachtstag:</b> Bütün eyaletler kutlar.</p>`;
       let isReplaced = false;
 
       listItems.forEach((item) => {
@@ -358,11 +419,6 @@ Noel Ertesi Günü - Zweiter Weihnachtstag: Bütün eyaletler kutlar.</p>`;
         }
       });
 });
-
-
-
-
-
 
 
 
@@ -403,14 +459,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 });
-
-
-
-
-
-
-
-
 
 
 
@@ -464,15 +512,6 @@ https://www.europakarte.org/klima/</p>
 
 
 
-
-
-
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
       const toggleButton = document.querySelector(".toggle");
       const listItems = document.querySelectorAll(".list-item");
@@ -513,6 +552,394 @@ Bu sayfada kullanılan kaynaklar:
         }
       });
 });
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".toggle");
+      const listItems = document.querySelectorAll(".list-item");
+      const originalContent = document.querySelector(".izah");
+      const izParagraph = document.querySelector(".iz");
+      const replacementContent = `<p><b>ALMANCA'NIN KÜLTÜREL PAYESİ</b></p>
+      <p>Öncelikle dil, resmi olarak veya dilsel işaretlerin yapısal bir sistemi olarak kabul edilmez. Bunun yerine, sosyal amaçlar ve kültürel bağlamlarda kullanılan bir iletişim aracı olarak anlaşılmaktadır. Bu nedenle odak noktası, dil kullanımının çeşitli ortamlarında, geleneksel ve bireysel davranış kalıplarına, sosyal normlara ve söylem topluluklarının kültürel değerlerine nasıl yansıdığıdır. Bir çevirinin arkasında genellikle A’dan B’ye basit bir aktarımdan daha fazlası vardır. Bir kelime bile hiçbir zaman başka bir dile tam olarak eşdeğer bir şekilde aktarılamaz, çünkü kültürel etkiler nedeniyle bile bilinen bir kelimenin anlamı değişebilir. Bu nedenle, dil süreçlerine Danışmanlık yaparken ve dil verilerinin toplu tedavisinde bu yönleri dikkate almak daha önemlidir.</p>
+      <p>Johannes Ebert, Almanca dili için şunları söylemektedir; “Küreselleşme, giderek daha fazla dilin yok olmasına neden oluyor. Bu bir gün Almanca için de geçerli olacak, çünkü Avrupa’da sadece İngilizce iletişim kurulacak mı? Hiç sanmıyorum. Almanca, Avrupa’nın en çok konuşulan ana dilidir ve canlı bir şekilde gelişmeye devam etmektedir.”</p>
+      <p>Bir dili gerçekten tanımlayan şey, genellikle kendi dilinden çok farklı olan kültür çevrelerinde ortaya çıkar. Bu durumda örnek olabilecek Japonya ülkesi vardır. İlk göze çarpan dilsel özelliklerden biri, yay ya da neredeyse melodik konuşma ritmi değil, herhangi bir Japonca konuşmada eksik olmaması gereken sürekli, doğrulayıcı “mh” idi! Almanca’da ise ” ja…mh….mh…ja…”, Japonca’da ihmal etmek anlamına gelir: seni dinlemiyorum!</p>
+      <p>Almanca dili için en kritik etki ve öneme sahip olan Alman federal hükümeti, resmî sitesinde bizzat şunlar yazılmıştır; “Alman dilinin öğretilmesi ve bakımı Federal Hükümet için büyük önem taşımaktadır. Federal Hükümet, kültürel, araştırma ve dış politika çerçevesinde, genel devlet önemine sahip kurumları ve projeleri teşvik etmekte ve böylece Alman dilini kültürel bir varlık olarak sürdürmeyi ve korumayı ve sürekli değişim ve gelişme sürecine eleştirel bir şekilde eşlik etmeyi hedeflemektedir. Bununla birlikte, anayasal olarak belirlenmiş görev bölünmesine göre, Almanca dil düzenlemelerinin sorumluluğu öncelikle eyaletlere aittir. Federal hükümetin temel yasaya göre – Federasyonun Hukuk ve İdari dili gibi Alt alanlar dışında – yasama yetkisi yoktur.“</p>
+      <p>Bu Sayfada Kullanılan Kaynaklar
+
+Alman federal hükümeti resmî sitesi: https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/staatsministerin-fuer-kultur-und-medien/kultur/deutsche-sprache-1891474
+
+Johannes Ebert; Die Globalisierung führt dazu, dass immer mehr Sprachen aussterben. Gilt das eines Tages auch für Deutsch, weil in Europa nur noch auf Englisch kommuniziert wird? https://www.goethe.de/de/uun/prs/int/gen/20490256.html</p>`;
+      let isReplaced = false;
+
+      listItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          if (item.getAttribute("data-content") === "kulturdil") {
+            if (!isReplaced) {
+              originalContent.innerHTML = replacementContent;
+              izParagraph.textContent = "KÜLTÜREL DİL";
+              isReplaced = true;
+            }
+          }
+        });
+      });
+
+      toggleButton.addEventListener("click", () => {
+        if (isReplaced) {
+          originalContent.innerHTML = replacementContent;
+          izParagraph.textContent = "KÜLTÜREL DİL";
+        } else {
+          originalContent.innerHTML = "";
+          izParagraph.textContent = "İZAH:";
+        }
+      });
+});
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".toggle");
+      const listItems = document.querySelectorAll(".list-item");
+      const originalContent = document.querySelector(".izah");
+      const izParagraph = document.querySelector(".iz");
+      const replacementContent = `<p><b>GERMENLER VE ORTA ÇAĞ ALMANYA'SI TARİHİ</b></p>
+      <p><b>Germenler-Germanien</b></p>
+      <p>“Germanien” terimi, birkaç tarih öncesine dayanıyor ve Yunanca “Germanoi”den gelmektedir. Ancak kesin kökenleri bilinmemektedir. Bununla birlikte, kavramın kökeninin Kelt dillerine dayandığı ve ”Schreienden”(göze batanlar) yani ya da ”Nachbarn”(komşular) kelimelerinden türetildiği varsayılmaktadır. Roma İmparatorluğu döneminde bu terim, iki Roma Vilayetini ifade ediyordu: biri “Germania superior”, diğeri ise “Germania inferior”. Bu, Ren Nehri’nin sol tarafında Roma tarafından işgal edilen bölgelere işaret ediyordu. O zamanki Alman toprakları “Germania magna “veya” Germania libera ” olarak adlandırılmıştır. Daha sonra, yaklaşık 9. yüzyılda, Frenk İmparatorluğu bölündüğünde, Germania çoğunlukla Doğu kısmı veya Kutsal Roma İmparatorluğu’nun Alman kısmı için kullanıldı. Bu nedenle, Germenlerin, yani eski Alman tarihi, daha çok topraklarla sınırlıdır, daha az katı bir Halk ya da tek bir katı kültür ile sınırlıdır.</p>
+      <p><b>Orta Çağ Almanyası-Deutschland und das Mittelalter-(Wege aus der Finsternis)</b></p>
+      <p>Burada Orta Çağ zamanı, 800 ve 1500’lü yıllar olarak kapsama alınmıştır. Orta Çağ’ın başlarında önemli bir olay, Karolenj Fransa’nın dağılmasıydı. Ardından batı ve doğu Fransa’ya bölündü. Daha sonra bu iki taraftan Fransa ve Almanya oluşacaktı. Doğu Fransa’da bağımsız bir Alman kimliği henüz mevcut değildi, ama Eski Yüksek Alman Dili, birleştirici bir karaktere sahip bir dil olarak gelişti. Politik olarak, Liudolfinger Hanedanı 10. yüzyılda Ostfranken(Doğu Frankonya)’da güç kazandı ve Roma İmparatoru oldu. Böylece, daha sonra Kutsal Roma İmparatorluğu olarak bilinen Roma-Alman İmparatorluğu kuruldu. Ortaçağda Roma-Alman İmparatorluğu’nun var olmasına rağmen bu henüz birleşik bir Almanya olarak kabul edilemez. Güç, birçok toprak sahibi arasında daha fazla dağıldı, bu da bugün Alman Federalizminde hala görülebilir. Farklı Prenslikler arasında da birçok çatışma vardı, bu yüzden sürekli bir birlik yoktu.</p>
+      <p><b>ORTA CAGDAN NAZI ALMANYASINA KADAR TARIH</b></p>
+      <p>1500-1558: Charles V: Kutsal Roma İmparatorluğu'nun son güçlü İmparatoru; Luther ve Reformasyona karşı savaştı. Almanya onun için sadece Burgonya/ İspanyol İmparatorluğunun bir yan Ülkesiydi.</p>
+      <p>1517: Martin Luther (1483-1546) 95 Thesen gegen den Ablass [= günahkarların Araf'taki zamanını kısaltmak için kilise tarafından satılan (genellikle yozlaşmış) hoşgörüler].</p>
+      <p>1534: Luther, İncil'in Almanca'ya çevirisini bitirir.</p>
+      <p>1555: Augsburg Dini barışı: V. Charles Protestanlığa karşı mücadeleyi kaybeder ve Alman prenslerinin kendi toprakları için Protestanlık ile Katoliklik arasında seçim yapmalarına izin vermelidir. Almanların çoğu, kısmen Almanların Roma Kilisesi tarafından sömürülmesine tepki olarak Protestanlığı seçmektedir.</p>
+      <p>1618-1648: Otuz Yıl Savaşı. Savaş bir inanç Savaşı olarak başladı ve Katolik Habsburg imparatorları (İspanya, Avusturya, Bohemya, İtalya ve Güney Hollanda'nın büyük bir bölümünü kontrol eden ve Katolik Alman Prenslerinin yardımıyla Almanya'daki geleneksel güçleri için savaşan) ile Protestan Fransızlar ve İsveçliler (Protestan Alman Prenslerinin yardımıyla) arasında bir güç mücadelesi olarak sona erdi. Savaşın sonuçları: Din özgürlüğü-Alman topraklarının imhası ve Yoksullaşması-Fransa Avrupa'nın en güçlü ülkesi olacaktır.-Kutsal Roma İmparatorluğu anlamsız bir formalite olacaktır.</p>
+      <p>1683-1714: Türklere karşı yapılan savaşlarda ve İspanyol ardıl Savaşında Avusturya, Avrupa'nın büyük bir gücü haline geldi.</p>
+      <p>1756-1763: Yedi Yıl Savaşı. II. Friedrich (1712-1786) döneminde Prusya, Avrupa'nın büyük bir gücü haline geldi ve bundan sonra giderek artan bir şekilde Avusturya'ya karşı Almanya'da Güç ve etki mücadelesini kazandı.</p>
+      <p>1772-1795: Polonya'nın üç Bölümü. Prusya, Avusturya ve Rusya Polonya'yı kendi aralarında bölerler.</p>
+      <p>1789: Prusya ve Avusturya'nın şiddetle mücadele ettiği Fransız Devrimi gerçekleşir.</p>
+      <p>1815: 2. Napolyon'un yenilgisinden sonra Paris barışı. Fransız Devrimi'ne ve daha sonra Napolyon'a karşı mücadele ile Kutsal Roma İmparatorluğu resmen sona erer ve aynı zamanda küçük Alman devletlerinin sonu başlar. Şimdi, Frankfurt'ta (Cumhurbaşkanı Avusturya tarafından atanan) bir Bundestag ile aciz bir Alman konfederasyonu vardir, ancak çok az güce sahiptirler. Prusya ve Avusturya, gelişen demokratik özlemleri başarıyla bastırmaya devam ettiler.</p>
+      <p>1848: Mart devrimi. Avusturya'da muhafazakar bakan Kont Metternich görevden alındı ve Alman Federasyonunda liberal bir ulusal meclis demokratik olarak seçildi, ancak Avusturya ve Prusya reformları engellemeye devam etti.</p>
+      <p>1861: I. Prusya Kralı oldu ve 1862'de Otto von Bismarck'ı Başbakan olarak atadı.</p>
+      <p>1866: Bismarck, Alman Konfederasyonu'nun soyu tükenmiş olduğunu ilan eder ve Prusya, Königgratz Savaşı'nda avusturya ile sonuçlanan savaşı kazanır ve böylece yeni "Kuzey Alman Konfederasyonu"nda Alman eyaletlerinin etkin kontrolünü kazanır.</p>
+      <p>1875: Almanya Sosyal Demokrat Partisi'nin (SPD) kuruluşu, Sosyal Demokrat İşçi Partisi ve genel Alman işçi Derneği'nin birleşmesinden kaynaklandı.</p>
+      <p>1878: Bismarck'ın "Sosyalist Yasası" (iki suikast girişiminden sonra) tüm sosyalist ve komünist Dernekleri yasaklar, ancak SPD'Yİ yasaklamaz. Yasa 1890'a kadar uzatıldı ve SPD'NİN daha da güçlenmesine engel olamadı.</p>
+      <p>1883/1889: Bismarck sosyal sigortayı kurdu. Ancak bu, muhafazakar Hükümeti ile işçi sınıfı arasındaki gerginliği hafifletmeye yetmedi.</p>
+      <p>1914-1918: Birinci Dünya Savaşı, Avusturya-Macaristan Arşidük Franz Ferdinand'ın Saraybosna'da öldürülmesiyle başladı. Versailles Antlaşması'nda Almanya Kolonilerini, Alsace-Lorraine'i Fransa ve Posen'e ve "Polonya koridoru" nun Polonya'ya kaybediyor; Almanya önemli tazminatlar ödemek ve Rheinland'ı askerden arındırmak zorunda. (Mart 1918'de Almanya'nın Rusya ile imzaladığı Brest-Litovsk Barışından daha cömert bir barış anlaşması. Rusya Almanya'ya çok fazla toprak vermeli, Polonya, Gürcistan ve Ukrayna'nın bağımsızlığını tanımalı ve Almanya'ya büyük tazminat ödemeye mahkum oldu.)</p>
+      <h1><b>1 DAKİKADA TARİH; ALMANYA</b></h1>
+      <p style="font-size: 22px;"><b>1 DAKİKADA NAZİ ALMANYASI</b></p>
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/QycURXf_mB4?si=gzm6Yzvn3hO_uuiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000;"></iframe>
+      <p style="font-size: 22px;"><b>1 DAKİKADA FEDERAL ALMANYA CUMHURİYETİ TARİHİ</b></p>
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/lUAsnAa4yoE?si=iTxeSLV03uvC2LNl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000;"></iframe>
+      
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ok26x8NkYVM?si=cOhPE6pzzRj9vuAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000; margin-top: 25px;"></iframe>
+      
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/CksGXl6oa3c?si=xF2JvTru2C718RwJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000; margin-top: 25px;"></iframe>
+      
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/hdYzRtZXy64?si=xiPzWQ_-wiob2210" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000; margin-top: 25px;"></iframe>
+      
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Q1VQYnfKJFg?si=DLYmlv2wtv2Tg8Tp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000; margin-top: 25px;"></iframe>
+      
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/JdwfhP_Om8w?si=T94xOsL4hyUmhKds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000; margin-top: 25px;"></iframe>`;
+      let isReplaced = false;
+
+      listItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          if (item.getAttribute("data-content") === "tarih") {
+            if (!isReplaced) {
+              originalContent.innerHTML = replacementContent;
+              izParagraph.textContent = "TARİH";
+              isReplaced = true;
+            }
+          }
+        });
+      });
+
+      toggleButton.addEventListener("click", () => {
+        if (isReplaced) {
+          originalContent.innerHTML = replacementContent;
+          izParagraph.textContent = "TARİH";
+        } else {
+          originalContent.innerHTML = "";
+          izParagraph.textContent = "İZAH:";
+        }
+      });
+});
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".toggle");
+      const listItems = document.querySelectorAll(".list-item");
+      const originalContent = document.querySelector(".izah");
+      const izParagraph = document.querySelector(".iz");
+      const replacementContent = `<p><b>ALMANYA TEKNİK VE SANAYİSİNDEN ÖN BİLGİLER</b></p>
+      <p>Almanya’nın on yıllardır belirlediği Sanayi çağının geride bıraktığı binalar ve tesisler ve tüm mahalleler her zaman, bazı kişiler için etkileyicidir. Endüstriyel miras, Almanya’nın imajını da görsel olarak şekillendirmeye devam ediyor; terk edilmiş fabrikalar, kullanılmayan fabrika salonları, işçi yerleşimleri, madenler, madencilik sonrası manzaralar her yerde bulunabilir. Bu yapılar, yakın Almanya tarihi hakkında çok şey söyleyen, bölgelerin ve insanların nasıl geliştiğini gösteren çağdaş tanıklardır. Bu yerler kırsal bölgelerde de bulunabilir.1</p>
+      <p><b>Önemli Kişiler 2</b></p>
+      <p>1-Carl Friedrich Benz Carl Friedrich Benz (1844-1929), teknoloji tarihinin en önemli Mucitlerinden biridir. Mühendis Carl Benz’in 1 numaralı 1885 numaralı Patent motorlu otomobili ilk modern otomobil olarak kabul ediliyor. Daimler AG’DE(Mercedes-Benz Eski Adı), Otomotiv Mühendisliği öncüsü Carl Benz’in İnovasyon ruhu canlı tutuluyor. Stuttgart Bölgesi Otomobil endüstrisini Carl Benz geleneğinde görülüyor.</p>
+      <p>2-Ferdinand Graf von Zeppelin Ferdinand Graf von Zeppelin (1838-1917) adıyla Zeppelin zeplini, Alman ve uluslararası zeplin gemilerini birbirine bağlar. Süvari Generali ve zeplin Tasarımcısı Graf Zepelin Konstanz Gölü’nde doğdu ve ilk Zeplinleri orada yükseldi. Hava taşımacılığının gelişiminin biyografik ve tarihi yerleri Almanya ve Danimarka’da kuzeye doğru yer almaktadır.</p>
+      <p>3-Karl Wilhelm Otto Lilienthal Karl Otto Lilienthal (1848-1896), muhtemelen bir uçakla (asılı Planör) başarılı ve tekrarlanabilir bir şekilde kayma yapan ilk insandı. Otto Lilienthal, Kuş uçuşu ile ilgili deneysel hazırlık çalışmaları ile modern Havacılık için ön koşullar yarattı.</p>
+      <p>4-Gottlieb Daimler Gottlieb Daimler (1834-1900), teknoloji tarihinin en önemli Mucitlerinden biridir. Mühendis, tasarımcı ve Sanayici, ilk yüksek hızlı benzinli motoru ve içten yanmalı motorlu ilk dört tekerlekli motorlu aracı geliştirdi. Daimler AG’de(Mercedes-Benz Eski Adı) Otomotiv üretim Öncüsünün İnovasyon ruhu canlı tutuluyor.</p>
+      <p>5- Terzi Albrecht Berblinger Ulm Terzisi Albrecht Berblinger (1770-1829) bir uçuş cihazı tasarladı. 31 Mayıs 1811’de Berblinger ilk kez Kartal Kalesi’nden Tuna Nehri üzerinde uçmaya çalıştı ve suya düştü. 1986 yılında, uçuşa elverişlilik kanıtlandı. Uçak Belediye binasında hâlâ görülebilir.</p>
+      <p>6-Otto von Guericke Otto von Guericke (1602-1686), aynı zamanda hukukçu, fizikçi ve mucit olan nadir Alman Siyasetçilerden biriydi. Magdeburg yarım küreleri ile yapılan hava basıncı deneyleri onu tanıdı. Magdeburg, Eski Belediye Başkanı Otto von Guericke’nin anısını canlı tutan tek kişi değil.</p>
+      <p>7-Krupp Ailesi Adeta bir girişimci hanedanı olan Krupp Ailesi Essen ve Ruhr bölgesini şekillendirdi. Ekonomik güç ve etki, günümüze kadar devam eden bir efsane yarattı. Nasyonal sosyalizm döneminde kurumsal hayırseverliğin ve adaletsizliğin tanıklıkları da aynı şekilde not edilebilir. Essen ve Duisburg’da binalar, anıtlar, sanayi tesisleri ve halefi şirketler büyük bir Krupp endüstri geleneğini hatırlatıyor.</p>
+      <p>KAYNAKLAR
+1- https://www.kulturrat.de/themen/texte-zur-kulturpolitik/industriekultur-kulturpolitische-bilanz-und-mehr/
+
+2- ÖNEMLİ KİŞİLER: https://www.kulturreise-ideen.de/technik/personen-2.html</p>`;
+      let isReplaced = false;
+
+      listItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          if (item.getAttribute("data-content") === "teknik") {
+            if (!isReplaced) {
+              originalContent.innerHTML = replacementContent;
+              izParagraph.textContent = "TEKNİK VE SANAYİ";
+              isReplaced = true;
+            }
+          }
+        });
+      });
+
+      toggleButton.addEventListener("click", () => {
+        if (isReplaced) {
+          originalContent.innerHTML = replacementContent;
+          izParagraph.textContent = "TEKNİK VE SANAYİ";
+        } else {
+          originalContent.innerHTML = "";
+          izParagraph.textContent = "İZAH:";
+        }
+      });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".toggle");
+      const listItems = document.querySelectorAll(".list-item");
+      const originalContent = document.querySelector(".izah");
+      const izParagraph = document.querySelector(".iz");
+      const replacementContent = `<p>1-Hochdeutsch- Standart Almanca
+
+Almanya birkaç farklı lehçeye bölünmüştür. Bunlar iki ana kategori olarak sınıflandırılır; Hochdeutsch(Yüksek Almanca) ve Plattdeutsch(Düşük Almanca). Bunlardan Hochdeutsch daha önemlidir.
+
+Bu lehçe daha çok Hochdeutsch olarak bilinir. Hochdeutsch ile ilgili Kuzey Almanya’dan geldiğini düşünebilirsiniz ancak durum tam tersidir. Hochdeutsch, Alplerin ve yaylaların bulunduğu Güney Almanya’dan geliyor.
+
+Bugün Almanca hakkında bildiğiniz bilgiler bu Hochdeutsch’a dayanır. Hochdeutsch okulda öğretilen lehçedir. Eğer Alman televizyonunu veya haberlerini izliyorsanız, oyuncular ve sunucular muhtemelen bu lehçeyi konuşurlar. Bu en çok konuşulan Almanca lehçesidir.</p>
+
+<p>2- Plattdeutsch-Kuzey Almanya Lehçesi
+
+Bu lehçe Almanyave Hollanda’nın kuzey kesminden gelir. Telaffuz açısından Hochdeutsch’a daha yakındır. Bu iki lehçenin yazılış biçimleri tamamen aynıdır. Kuzey Almanya Lehçesi giderek daha az insan konuştuğu için kaybolan bir lehçedir. Bu yüzden bu lehçeye Düşük veya Alçak Almanca da denilmektedir.
+
+Plattdeutsch’a örnek olarak; Türkçe: Ağız, Hochdeutsch: Mund, Plattdeutsch: Sabbel.</p>
+
+<p>3-Schwiizerdütsch-İsviçre Almancası
+
+İsviçre Almancası, doğal olarak İsviçre’nin lehçesidir. Fransızca ve İtalyanca, İsviçre’nin resmi dilleri olduğundan bu Almanca lehçesi diğerlerinden çok daha farklıdır. Komşu diller telaffuz üzerinde kesinlikle izlerini bıraktılar. İsviçre-Alman lehçesini anlamak, diğer bölgelerden Almanca konuşanlar için bile zordur.
+
+Schwiizerdütsch’e örnek olarak; Türkçe: Kova, Hochdeutsch: Eimari, Schwiizerdütsch: Chübel.</p>
+
+<p>4-Bayerisch-Bavyera(Bayern) Lehçesi
+
+Bavyera Güneydoğu Almanya’dadır ve Bayerisch yazıldığında standart Almancaya çok benzer, ancak ünlülerin telaffuzunda farklılık gösterir. Bavyera’daki herkes standart Almancayı okuyabilir, yazabilir ve anlayabilir. Ancak, nadiren konuşma fırsatı bulurlar. Almanca / Hochdeutsch bu nedenle bu bölgede “Schriftdeutsch” veya Yazılı Almanca takma adını almıştır.
+
+Bayerisch’e örnek olarak; Türkçe: Sincap, Hochdeutsch: Eichhörnchen, Bayerisch: Oachkatzlschwoaf.</p>
+
+<p>5-Österreichisches Deutsch-Avusturya Almancası
+
+Avusturya Almancası diğerlerinden biraz farklıdır. Dilbilgisinde çoğunlukla aynı olsa da, Avusturya Almancası benzersiz bir kelime dağarcığına sahiptir. Bu Amerikan ve İngiliz İngilizcesi olarak düşünülebilir. Amerikalılar chips, İngilizler crisps der. Ancak her iki tarafın da bahsettiği şey aynıdır. Aynı durum Avusturya ve Almanya lehçeleri için de geçerlidir. Misal erik kelimesi Hochdeutsch olarak Pflaume, Österreichisches Deutsch olarak Zwetschge’dir.
+
+Österreichisches’e örnek olarak; Türkçe: Selam!, Hochdeutsch: Grüß Gott!, Österreichisches: Griaß di!</p>
+
+<p>6-Sächsisch-Yukarı Sakson Lehçesi
+
+Saksonya, Almanya’nın doğu bölgesinde bir eyalettir, bu nedenle Säschsisch öncelikle doğuda konuşulur. Dil, bilimsel olarak standart Almanca ve diğer lehçelere oldukça benzer, ancak birçok Almanca konuşanın güçlü duygulara sahip olduğu bir aksanı vardır.
+
+Sächsisch’e örnek olarak: Türkçe: Kafa, Hochdeutsch: Kopf, Sächsisch: Nischl.</p>
+
+<p>7-Berlinerisch- Berlin Almancası
+
+Berlin, Almanya’nın başkentidir. Zengin tarihi ve gelişen sanat sahnesiyle uluslararası bir merkez hâline geldi. Bu sebeptendirki Berlin lehçesinin temsil ettiği vurgu yavaş yavaş kaybolmaktadır. Berlin’in modernleşmesi onu küresel bir şehir haline getirdiğinden tüm yaşamları boyunca orada kalmış sadece birkaç kişi yaşıyor. Eğitimde de Hochdeutsch öğretilmesi bu lehçenin popülaritesini azaltmaktadır.
+
+Berlinerisch’e örnek olarak Türkçe: Gıcık İnsan, Hochdeutsch: hinterhältiger Mensch, Berlinerisch: Aas</p>
+
+<p>8-Pennsylvania Dutch-Pensilvanya Almancası-(Pennsilfaanisch Deitsch)
+
+Pennsylvania Dutch’ın aslında bir Alman lehçesi olduğunu pek kimse bilmiyor. ”Dutch” aslında ”Deutsch” olması gerekir. Alman göçmenlerin oluşturduğu bu Amerikan azınlık dili, Amerika Birleşik Devletleri’nin doğu kıyısında hâlâ yaşıyor.
+
+Pennsilfaanisch’e örnek olarak; Türkçe: Kaplumabağa, Hochdeutsch: Eine Schildkröte, Pennsylvanisch: En Shil-grut.</p>
+
+<p>Bu sayfada Referans alınan Kaynaklar
+
+Lehçelere verilen kelime örnekleri haricinde bu sayfada “1-” olarak belirtilen kaynak kullanılmıştır. Kelimeler için de sözlüklerden yararlanılmıştır.
+
+1- https://www.optilingo.com/blog/german/german-dialects/</p>`;
+      let isReplaced = false;
+
+      listItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          if (item.getAttribute("data-content") === "lehce") {
+            if (!isReplaced) {
+              originalContent.innerHTML = replacementContent;
+              izParagraph.textContent = "LEHÇE";
+              isReplaced = true;
+            }
+          }
+        });
+      });
+
+      toggleButton.addEventListener("click", () => {
+        if (isReplaced) {
+          originalContent.innerHTML = replacementContent;
+          izParagraph.textContent = "LEHÇE";
+        } else {
+          originalContent.innerHTML = "";
+          izParagraph.textContent = "İZAH:";
+        }
+      });
+});
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".toggle");
+      const listItems = document.querySelectorAll(".list-item");
+      const originalContent = document.querySelector(".izah");
+      const izParagraph = document.querySelector(".iz");
+      const replacementContent = `<p>Waldmann'ın 2020'de yazdığı makale'de o zamanı kastederek günümüzde 100 milyon kişi ile Almanca'nın Avrupa'nın en büyük dili olduğunu söylemiştir. Ancak bu dil sahip olduğu geniş Grammer yapısı ve kelime dağarcığı ile nereden geldi ve bugünkü hâline nasıl geldi?</p>
+      <p>Urgemanische Sprache-Proto Germen Dili
+Henüz Almanca mevzu bahis bile değilken MÖ 5. Yüzyılı arasında İlk Fonetik Değişimle bir ilkel Germen dili, Hint-Avrupa dil ailesinden ayrıldı. Bu ilk fonetik değişimi ise belirli seslerin zamanla değiştiği bir değişim sürecidir. Bu ilkel yada Proto-Germen dilinin ayrıntılı olarak nasıl inşaa edildiği pek iyi bilinmemektedir çünkü bu döneme ait yazılı kanıtlar çok nadirdir. Bu sebeple günümüzde yalnızca yeniden inşa edilebilir. Önceki Germenler mezarlarında ve kült nesnelerinde n fazla birkaç Runik yazıt bıraktılar, hikayeler ve ilahiler ise sözlü olarak aktarıldı. Bununla birlikte brauda(Brot-Ekmek) veya Gronpan(Griffin) gibi bazı germen terimleri şekil değiştirerek günümüze kadar gelmeyi başarmıştır.</p>
+      <p>Diutisc-Althochdeutsch-Eski Standart Almanca (MS 600-1050)
+Alman halkının göçü ve Hristiyanlığın yayılması sırasında, Alman dilinin gerçek tarihi MS 600 civarında başladı. Bir grup Batı Germen Dili, İkinci Fonetik Değişim olarak adlandırılan diğer Germen Lehçelerinden ayrıldı ve başlıkta da geçen Eski yüksek Almanca denilen şey ortaya çıktı. İkinci Fonetik Değişim, Alman tarihinde önemli bir dönüm noktasıdır. Bugün Pfanne, Zeit ve Tochter denilmesinin sebebi budur. Oysa Hollandaca ve İngilizce olarak sırasıyla Pan, Tijd/Time ve Dochter/Daughter denir. Ek olarak bu değişim süreci Almanca'yı farklı lehçelere bölmüştür. Örnek olarak kuzeydeki Düşük Almanca, İngilizce'de olduğu gibi eski sesleri (yani "pf" yerine "p" vb.) korumuştur. Bu durum günümüzde de İskandinav Lehçelerinde ve dillerinde görülmektedir.</p>
+      <p>Herzeliebez vrouwelin-Mittelhochdeutsch-Orta Zaman Standart Almancası(MS 1050 – 1350)
+Ritter, Minnesang ve Feodalizm; Yüksek Orta Çağ ekonomik ve kültürel yükseliş olarak değil de aynı zamanda politik parçalanma ile de karakterize edilmiştir.1050 yılından itibaren konuşulan alanlar ayrı ayrı bireysel egemenliğini ilan etmiş alanlarından oluşan bir yama halısına ayrıldı. Alman dili aynı şekilde tekrar gelişti ve her bölgenin kendisine ait lehçesi, her hanedanın kendi mahkeme şiiri vardı. Örneğin, Staufen İmparatorunun sarayında bu dönemde Nibelungenlied, Parzival ve Tristan gibi önemli destanlar ortaya çıktı. Ayrıca Walter von der Vogelweide Minnesangı ''Herzeliebez Vrouwelin'' gibi Orta Standart Almanca'da çırptı. Orta-yüksek Almanca, günümüz Almancasına çok benziyordu. Bir yandan Umlautlar (ä, ö, ü) tam çiçeklenmeye başladı, diğer yandan gerilmemiş heceler zayıfladı ve gerilmemiş son hecelerdeki sesli harfler zayıfladı (Eski Standart Almanca'da hōran, Orta Zaman Standart Almancası'nda hœren-hören olmuştur). Telaffuzdaki bu değişiklik gerçek bir zincirleme reaksiyona yol açtı. Sesli harflerin zayıflaması, daha önce farklı çekim sonlarının(Kasusendung) birbirine benzemesine neden oldu ve bu da bir ismin durumunu göstermeye devam etmek için makaleleri gerekli kıldı.</p>
+<p>Frühneuhochdeutsch-Erken Yeni Yüksek veya Standart Almanca
+Erken Yeni Yüksek Almanca ayrı bir döneme değer. Çünkü bu dönemde Almanca dil alanında önemli kültürel değişiklikler meydana geldi. Martin Luther, 1545 tarihli Kitab-ı Mukaddes çevirisiyle Almanca kelime dağarcığını ''Denkzettel, Feuereifer ve Lästermaul'' gibi sayısız sözcükle zenginleştirdi. Daha önce Ziege-Keçi (Geiss yerine) veya Ufer-Kıyı (Gestade yerine) gibi bölgesel ifadeler de tüm Almanca dil bölgelerinde tanınmaya yardımcı oldu. Fakat her şeyden önce, tek tip bir Almanca dilinin temelini attı. Çünkü Kitab-ı Mukaddes'in Almanca metninin yayılmasıyla Güney ve Orta Alman Lehçelerine dayanan Yeni Yüksek Almanca, Kuzey Almanya'da da giderek daha fazla hakim oldu. Johannes Gutenberg'in 1446 civarında kitap basımı gibi teknik yenilikler, Alman yazılı dilinin önem kazanmasına neden oldu. Tüm Lehçelerin konuşmacıları tarafından anlaşılan standart bölgesel diller oluşturuldu. Öte yandan, Aşağı Alman lehçeleri, Orta Çağ'da hala Alman lehçeleri arasında yer alan ve 16. yüzyılın sonunda bağımsız bir dil haline gelen Hollandaca hariç kendi yazılı dillerini geliştirmediler.</p>
+<p>Ulusal Dil Olarak Almanca 19. ve 20. Yüzyıllar
+Almanca konuşulan bölgelerin çoğunluğu 1871'de Alman Reich'i oluşturmak üzere bir araya geldiğinde, yeni ulus devletin dili için elbette tek tip bir yazım gerekliydi. Böylece Konrad Duden, 1880 yılında Alman dilinin tam ortografik sözlüğünü yayınladı. 1996 yılında yapılan Yazım Reformuna kadar uygulanmıştır.
+
+19.yüzyılda Sanayi Devrimi ile birlikte birçok teknik sözcük (Elektrizität-Elektrik, Waschmaschine-Çamaşır Makinesi, Eisenbahn-Demir Yolu) toplumsal yaşam alanında ise İngilizce ve Fransızcadan (Lokomotive-Lokomotif, Billet-Kütük, Telegramm-Telgraf) ödünç alınmıştır. 20. Yüzyıl'da da yeni icatlar ve toplumsal değişikler Almanca kelime dağarcığına ''Computer-Bilgisayar, Job-İş ve Team-Takım'' gibi çok sayıda İngilizce ödünç kelime eklenmesini sağlamıştır.
+
+20. yüzyılda telaffuz konusunda pek bir şey yapılmamış olsa da (sadece yuvarlanmış "r", daha çok rendelenmiş bir "r" ye yol açtı, Alman vakalarında sadeleştirme eğilimi gözlemlenebilir: Genitif (en azından konuşulan dilde) daha az ve daha az kullanılır, bunun yerine genellikle Dativ, örneğin "wegen dem Wetter" (Genitiv wegen des Wetters) ile değiştirilir.</p>
+<p>Günümüz Almancası Konuşanları Kadar Çeşitli Hâli
+İngilizce, Fransızca ve İspanyolca'dan farklı olarak Almanca, hiçbir zaman dünya dili hâline gelmedi. Bununla birlikte Alman dili, tekdüze olmaktan uzaktır. Çünkü yüzlerce ortaya çıkan Alman lehçeleri bugün hâlâ vardır. Büyük diyalektik çeşitlilik, Almanca'da bir ve aynı şey için sık sık birçok terimin bulunmasından da sorumludur. Sadece "bequeme Hausschuhe" ifadelerini düşünün: Schlappen, Latschen, Pantoffeln, Puschen, Finken, Patschen...
+
+Tüm dillerin doğasında olduğu gibi Almanca da kaçınılmaz olarak değişmeye devam ediyor. Bunun yanında yazı dili bile yeniliklerden uzak durmuyor. Haziran 2017'de Alman yazımında bugüne kadarki en son harf tanıtıldı. ß harfi yani okunuşuyla Eszett harfi.
+
+Bu konuda gördüğünüz bu yazılanlardan da referans alınan Sarah Waldmann durumu şöyle görmektedir; ''Genitiv, Dativ ve Akkusativ bir noktada tamamen kaybolacak ya da karmaşık hece Yapılarımızla üçüncü bir ses kayması temizlenecek, ancak büyük-büyük-büyük torunlarımız muhtemelen en erken öğreneceklerdir.''</p>
+<p>KAYNAKLAR
+
+https://de.babbel.com/de/magazine/geschichte-der-deutschen-sprache</p>`;
+      let isReplaced = false;
+
+      listItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          if (item.getAttribute("data-content") === "diltarih") {
+            if (!isReplaced) {
+              originalContent.innerHTML = replacementContent;
+              izParagraph.textContent = "DİLİN TARİHİ";
+              isReplaced = true;
+            }
+          }
+        });
+      });
+
+      toggleButton.addEventListener("click", () => {
+        if (isReplaced) {
+          originalContent.innerHTML = replacementContent;
+          izParagraph.textContent = "DİN";
+        } else {
+          originalContent.innerHTML = "";
+          izParagraph.textContent = "İZAH:";
+        }
+      });
+});
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".toggle");
+      const listItems = document.querySelectorAll(".list-item");
+      const originalContent = document.querySelector(".izah");
+      const izParagraph = document.querySelector(".iz");
+      const replacementContent = `<p>Frankfurt’taki modern gökdelenler, kuzeyde yıllardır bulunan tuğla binalar, Münih’teki klasik müze tapınakları gibi eserlere bakılırsa Almanya’nın renkli bir mimari tarihe sahip olduğu söylenebilir. Özellikle Berlin gibi tarihsel olarak önemli şehirlerde etkileyici ve çok yönlü yapı manzarası vardır. Brandenburg Kapısı gibi turist çeken yerlerin dışında Başkent, aynı zamanda Gründrzeit’ın blok kenar mahallerine sahip geniş kapsamlı yapısıyla da bilinir. Rheinmetropole yani Köln denilince dünya çapında Köln Katedrali ve bir gotik mimari yapısı akla gelir. Frankfurt’ta ise herkesin aklına hemen 20. yüzyılın gökdelenleri gelir. O hâlde hangi mimari üslup ve özellikler Alman metropolleri için tipiktir?1</p>
+      <p>KARL FRİEDRİCH SCHİNKEL’DEN NORMAN FOSTER’A-BAROCK’TAN MODERN MİMARİYE</p>
+      <p>BERLİN-STADT DER ARCHİTEKTUR-MİMARLIK ŞEHRİ Tek başına Berlin bile mimarlık hayranlarını haftalarca orada tutabilecek zenginliğe sahiptir. Şehrin en güzel meydanlarının birisinde bulunan Fransız Katedrali, Alman Katedrali, Gendarmenmarkt ve daha fazlası…
+
+Mimar Friedrich Schinkel, Berlin’de Klassizmin başyapıtları olarak kabul edilen Neue Gar veya Alte Museum’u gerçekleştirdi. Bay Norman Forest, Almanya Bundestag’ın babası gibi görülebilecek ve yeniden canlandırılan Reichstag’ın 1999 yılından beri ziyaretçlere erişilebilir olan cam kubbeyi genel kurul salonunun üzerine yerleştirilmesine izin vermiştir.</p>
+      <p>Elbphilharmonie: Hamburg’un Simgesel Yapıları</p>
+      <p>Hamburg’un yeni dönüm noktası, 2017 yılında açılan Elbphilharmonie, Hafencity’de heybetli bir cam yapıya sahip ve eski bir mağazanın tuğla kaidesi üzerine inşa edilmiş bir Konser Salonu. Almanya’nın en büyük ikinci kentinin daha eski bir simgesi UNESCO tarafından Yüceltilmiş ve Mimar Fritz Höger tarafından eski şehrin Kontorhaus bölgesinde gerçekleştirilen Chilehaus, 1920’lerin tuğla Dışavurumculuğunun etkileyici bir örneğidir. Şili’den zengin bir adam olarak dönen ve inşa etmek için 4,8 milyon tuğla satın aldığı iddia edilen Hamburglu bir tüccarın bağışına borçludur. Binanın Tepesi bir gemi yayı andırıyor ve Avrupa’nın en sivri cephe açılarından biri. Üst katlar ofis olarak kiralanırken, avluya mağazalar, kafeler ve restoranlar ile serbestçe erişilebilir.</p>
+      <p>Dessau Kenti Orta Çağ tamamlanmış bir dönem olarak kabul edilebilir, Bauhaus’un Mirası ise günümüze kadar Sanat, Mimarlık ve kültürde yankılanır. 1919 yılında Gropius tarafından kurulan okulun büyük bir inşaat Topluluğu, Berlin’in güneybatısındaki Dessau’da bir buçuk saatlik bir sürüş mesafesindedir.</p>
+      <p>Truss Hayranları İçin: Quedlinburg Ortaçağ yapılarına meraklıysanız, Bavyera’daki küçük Nördlingen kasabasında da haklısınız. 2,6 kilometre boyunca, eski, kapalı ve 1400 yılı civarında kapalı olan şehir duvarı halkası tamamen erişilebilir. Bu da Almanya’da eşsiz.</p>
+      <p>Mühendis Aklı: Göltzschtalbrücke 1851’den beri vogtland, Saksonya’daki Reichenbach yakınlarındaki derin bir Vadiyi kapsayan köprü Yapım sanatının bir örneği: dünyanın en büyük tuğla Köprüsü. Göltzschtal Köprüsü, tamamlandığında 78 metre yüksekliğindeki dünyanın en yüksek Demiryolu Köprüsüydü. Alman mühendis Johann Andreas Schubert tarafından tasarlandı. Yürüyüş yolları binlerce Kemerden oluşan yapı boyunca devam ediyor. Köprünün 150 metreden muhteşem manzarası için komşu Mylau kasabasında bir balon yükselir. Event karakteri var.</p>
+      <p>Konutlar-Klasik Modernliğin Simgesi Berlin ve Hamburg’un yanı sıra, diğer büyük Alman şehirleri de mimari güzellikler sunuyor: Düsseldorf, örneğin Frank O’gehry’nin çarpık açılı binaları, Münih, Herzog ve Pierre de Meuron’un dış cephesinde renkli ışıklı Yastıklarla Stadyumu, Frankfurt am Main Avrupa’nın en yüksek gökdeleni, Sir Norman Foster tarafından tasarlanan Commerzbank Kulesi. Dresden, köpek kulübesi, kıyafet Evi ve yeniden inşa edilen Frauenkirche dahil olmak üzere Barok binaların bolluğu ile çekiyor.</p>
+      <p>Bu sayfada referans alınan kaynaklar:
+
+(1-) https://www.mcmakler.de/magazin/architektur-in-deutschland
+
+(2-) https://www.germany.travel/de/staedte-kultur/von-schinkel-bis-foster-faszinierende-architektur.html</p>`;
+      let isReplaced = false;
+
+      listItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          if (item.getAttribute("data-content") === "mimar") {
+            if (!isReplaced) {
+              originalContent.innerHTML = replacementContent;
+              izParagraph.textContent = "ALMANYA MİMARİSİ";
+              isReplaced = true;
+            }
+          }
+        });
+      });
+
+      toggleButton.addEventListener("click", () => {
+        if (isReplaced) {
+          originalContent.innerHTML = replacementContent;
+          izParagraph.textContent = "ALMANYA MİMARİSİ";
+        } else {
+          originalContent.innerHTML = "";
+          izParagraph.textContent = "İZAH:";
+        }
+      });
+});
+
+
+
+
+
+
+
 
 
 
@@ -570,89 +997,39 @@ https://www.europakarte.org/klima/</p>
 
 (2-) https://de.statista.com/themen/125/religion/#topicHeader__wrapper</p>`,
 
-    gun:`<p>ALMANYA ÜLKESİNDE KUTLANAN RESMÎ GÜNLER
+    gun: `<p><b>ALMANYA ÜLKESİNDE KUTLANAN RESMÎ GÜNLER</b></p>
 
-Almanya Federal Devleti eyaletler ile yönetildiğinden ve resmî günler eyaletlere göre farklılık gösterdiği için bu bölüm eyaletlere göre ayrılmıştır.
+<p>Almanya Federal Devleti eyaletler ile yönetildiğinden ve resmî günler eyaletlere göre farklılık gösterdiği için bu bölüm eyaletlere göre ayrılmıştır.</p>
 
-Epifani Yortusu - Heilige Drei Könige:
+<p><b>Epifani Yortusu - Heilige Drei Könige:</b> Baden, Württemberg, Bavyera, Saksonya Anhalt kutlar.</p>
 
-Baden,
+<p><b>Kutsal Cuma - Karfreitag:</b> Bütün eyaletler kutlar.</p>
 
-Württemberg,
+<p><b>Paskalya Pazarı - Ostersonntag:</b> Brandenburg kutlar.</p>
 
-Bavyera,
+<p><b>Paskalya Pazartesisi - Ostermontag:</b> Bütün eyaletler kutlar.</p>
 
-Saksonya Anhalt kutlar.
+<p><b>Yükseliş Günü - Christi Himmelfahrt:</b> Bütün eyaletler kutlar.</p>
 
-Kutsal Cuma - Karfreitag: Bütün eyaletler kutlar.
+<p><b>Hamsin Yortusu - Pfingstsonntag:</b> Brandenburg kutlar.</p>
 
-Paskalya Pazarı - Ostersonntag: Brandenburg kutlar.
+<p><b>Hamsin Pazartesisi - Pfingstmontag:</b> Bütün eyaletle kutlar.</p>
 
-Paskalya Pazartesisi - Ostermontag: Bütün eyaletler kutlar.
+<p><b>Katolik Yortusu - Fronleichnam oder Corpus Christi:</b> Baden Württemberg, Bavyera, Hessen, Kuzey Ren Vestfalya, Renanya Palatina, Saarland, Saksonya, Thüringen kutlar.</p>
 
-Yükseliş Günü - Christi Himmelfahrt: Bütün eyaletler kutlar.
+<p><b>Meryem’in Göğe Çıkışı - Mariä Himmelfahrt:</b> Bavyera ve Saaland kutlar.</p>
 
-Hamsin Yortusu - Pfingstsonntag: Brandenburg kutlar.
+<p><b>Alman Birliği Günü-Tag der deutschen Einheit:</b> Bütün eyaletler kutlar.</p>
 
-Hamsin Pazartesisi - Pfingstmontag: Bütün eyaletle kutlar.
+<p><b>Reformasyon Günü - Reformationstag:</b> Brandenburg, Hamburg, Aşağı Saksonya, Mecklenburg Vorpommern, Saksonya, Saksonya Anhalt, Thüringen, Schleswig Holstein kutlar.</p>
 
-Katolik Yortusu - Fronleichnam oder Corpus Christi: Baden Württemberg
+<p><b>Azizler Günü - Allerheiligen:</b> Brandenburg, Hamburg, Aşağı Saksonya, Mecklenburg Vorpommern, Saksonya, Saksonya Anhalt, Thüringen, Schleswig Holstein kutlar.</p>
 
-Bavyera
+<p><b>Dua ve Tövbe Günü - Buß und Bettag:</b> Saksonya eyaleti  kutlar.</p>
 
-Hessen
+<p><b>Noel Günü - Erster Weihnachtstag:</b> Bütün eyaletler kutlar.</p>
 
-Kuzey Ren Vestfalya
-
-Renanya Palatina
-
-Saarland
-
-Saksonya
-
-Thüringen kutlar.
-
-Meryem’in Göğe Çıkışı - Mariä Himmelfahrt: Bavyera ve Saaland kutlar.
-
-Alman Birliği Günü-Tag der deutschen Einheit: Bütün eyaletler kutlar.
-
-Reformasyon Günü - Reformationstag: Brandenburg,
-
-Hamburg,
-
-Aşağı Saksonya,
-
-Mecklenburg Vorpommern,
-
-Saksonya,
-
-Saksonya Anhalt,
-
-Thüringen,
-
-Schleswig Holstein kutlar.
-
-Azizler Günü - Allerheiligen: Brandenburg,
-
-Hamburg,
-
-Aşağı Saksonya,
-
-Mecklenburg Vorpommern,
-
-Saksonya,
-
-Saksonya Anhalt,
-
-Thüringen,
-
-Schleswig Holstein kutlar.
-
-Dua ve Tövbe Günü - Buß und Bettag: Saksonya eyaleti  kutlar.
-
-Noel Günü - Erster Weihnachtstag: Bütün eyaletler kutlar.
-
-Noel Ertesi Günü - Zweiter Weihnachtstag: Bütün eyaletler kutlar.</p>`, 
+<p><b>Noel Ertesi Günü - Zweiter Weihnachtstag:</b> Bütün eyaletler kutlar.</p>`, 
    
     spor: `<p>KAlmanya Ülkesinde Spor
 Taban sporu için destek esas olarak belediyelerden ve eyaletlerden geliyor. Almanya’da spor yaklaşık 91.000 jimnastik ve spor kulübü tarafından organize edilmektedir. Yaklaşık 24 milyon üyesi için spor, sağlıklı bir yaşam tarzını teşvik eder, topluluk oluşturur ve bağlılık, güvenilirlik, takım ruhu, adil oyun ve hoşgörü gibi değerleri aktarır.
@@ -673,6 +1050,264 @@ Alman nüfusu içinde aşırı kilonun artması nedeniyle, Alman spor Federasyon
 2- https://www.bmi.bund.de/DE/themen/sport/sport-node.html
 
 3- https://www.freisport.de/geschichte-breitensport-deutschland/</p>`,
+
+      soz:`<p><b>ALMANCA ATASÖZLERİ</b></p>
+
+<p>Bu bölümün tek mahiyeti Türkçe bilen insanların Almanca atasözlerini anlamasına yönelik bir basamak oluşturmaktr. Bunun yolu elbet kelimelerin özgün anlamlarını araştırarak olabilir. Fakat bu sözlerin bireyin kendi külütüründe hangi söze tekabul ettiğini belirtmenin, anlamaya yönelik bir basamak oluşturabileceği bu çalışmada zannedilmiştir. Ve evet, bütün Almanca atasözleri ne yazık ki burada belirtilmemiştir: Eserin mahdut bir şerh olmasının sebeblerinden birisi de budur.</p>
+
+<p><b>Hochmut kommt vor dem Fall:</b> Kibir düşüşten evvel gerçekleşir.</p>
+
+<p><b>Es ist nicht alles Gold, was glänzt.</b> Parlayan her şey altın değildir.</p>
+
+<p><b>Der Äpfel fällt nicht weit vom Stamm:</b> Armut dibine düşermiş.</p>
+
+<p><b>Ausnahmen bestätigen die Regel:</b> İstisnalar kaideyi bozmaz.</p>
+
+<p><b>Aller Anfang ist schwer:</b> Bütün başlangıçlar güçtür.</p>
+
+<p><b>Morgenstund hat Gold im Mund:</b> Erkenci kuş solucanı yakalar.</p>
+
+<p><b>Wer rastet, der rostet:</b> Yuvarlanan taş yosun tutmaz.</p>
+
+<p><b>Wo gehobelt wird, da fallen Späne:</b> Gülü seven dikenine katlanır.</p>
+
+<p><b>Kindermund tut Wahrheit kund:</b> Çocuktan al haberi.</p>
+
+<p><b>Der Ton mach die Musik:</b> Ses tonu güdüdür.</p>
+
+<p><b>Was Hänschen nicht lernt, lernt Hans nimmermehr:</b> İhtiyar köpeğe yeni hüner öğretilemez.</p>
+
+<p><b>Der Fisch stinkt vom Kopf her:</b> Balık basştan kokar.</p>
+
+<p><b>was du Heute kannst besorgen, das verschiebe nicht auf Morgen:</b> Bugünün işini yarına bırakma.</p>
+
+<p><b>Viele Köche verderben den Brei:</b> Birden fazla el yemeği bozar.</p>
+
+<p><b>Wenn zwei sich streiten, freutscih der Dritte:</b> İkisi kavga ediyorsa, üçüncü bayram eder.</p>
+
+<p><b>Reden ist Silber, Schweigen ist Gold.:</b> Söz gümüşse sükut altındır.</p>
+
+<p><b>Kleider machen Leute:</b> Kıyafetler insanı baştan yapar.</p>
+
+<p><b>Wer anderen eine Grube gräbt, fällt selbst hinein:</b> Zarar veren zarar alır.</p>
+
+<p><b>Lieber dne Spatz in der Hand als die Tuabe auf dem Dach:</b> Eldeki bir kuş çalılıkta iki eder.</p>
+
+<p><b>Alle Wege führ nach Rom:</b> Bütün yollar romaya çıkar.</p>
+
+<p><b>Man soll den Tag nicht vor dem Abend loben:</b> Dereyi görmeden paçaları sıvamak.</p>
+
+<p><b>Einem geschenkten Gaul schaut man nicht ins Maul:</b> Beleş atın dişine bakılmaz.</p>
+
+<p><b>Eine Hand wäscht die andere:</b> Bir el diğerini yıkar.</p>
+
+<p><b>Kleinvieh macht auch Mist:</b> Damlaya damlaya göl olur.</p>
+
+<p><b>Wer im Glashaus sitzt, sollte nicht mit Steinen werfen:</b> Dinime küfreden bari müslüman olsa.<b>İZAH</b>(Asıl nosyon emin olmaktır: Bu herhangi işte veya konuda bilgi sahibi olmak olabilir.)</p>
+
+<p><b>Die Katze lässt das Mausen nicht:</b> Can çıkar huy çıkmaz.</p>
+
+<p><b>Wer zuerst kommt, mahlt zuerst:</b> Erken kalkan yol alır.</p>
+
+<p><b>Andere länder,andere Sitten:</b> Farklı ülkeler, farklı kültürler.</p>`,
+
+     lehce:` <p>Bir dilin lehçeleri, o dili benzersiz kılar. Bölgesel dil farklılıkları sadece heyecan verici olmayıp aynı zamanda Kültür hakkında bir fikir de vermektedir. En çok konuşulan diller gibi Almanca’nın da birçok farklı lehçesi vardır. Almanya, Avusturya ve İsviçre’nin hepsinin kendine özgü aksanlarının nasıl olduğunu görmek kolaydır. Ancak Almanya’da bile farklı bölgesel lehçeler vardır. Peki hangisi öğrenilmeye değer?</p>
+
+<p>1-Hochdeutsch- Standart Almanca
+
+Almanya birkaç farklı lehçeye bölünmüştür. Bunlar iki ana kategori olarak sınıflandırılır; Hochdeutsch(Yüksek Almanca) ve Plattdeutsch(Düşük Almanca). Bunlardan Hochdeutsch daha önemlidir.
+
+Bu lehçe daha çok Hochdeutsch olarak bilinir. Hochdeutsch ile ilgili Kuzey Almanya’dan geldiğini düşünebilirsiniz ancak durum tam tersidir. Hochdeutsch, Alplerin ve yaylaların bulunduğu Güney Almanya’dan geliyor.
+
+Bugün Almanca hakkında bildiğiniz bilgiler bu Hochdeutsch’a dayanır. Hochdeutsch okulda öğretilen lehçedir. Eğer Alman televizyonunu veya haberlerini izliyorsanız, oyuncular ve sunucular muhtemelen bu lehçeyi konuşurlar. Bu en çok konuşulan Almanca lehçesidir.</p>
+
+<p>2- Plattdeutsch-Kuzey Almanya Lehçesi
+
+Bu lehçe Almanyave Hollanda’nın kuzey kesminden gelir. Telaffuz açısından Hochdeutsch’a daha yakındır. Bu iki lehçenin yazılış biçimleri tamamen aynıdır. Kuzey Almanya Lehçesi giderek daha az insan konuştuğu için kaybolan bir lehçedir. Bu yüzden bu lehçeye Düşük veya Alçak Almanca da denilmektedir.
+
+Plattdeutsch’a örnek olarak; Türkçe: Ağız, Hochdeutsch: Mund, Plattdeutsch: Sabbel.</p>
+
+<p>3-Schwiizerdütsch-İsviçre Almancası
+
+İsviçre Almancası, doğal olarak İsviçre’nin lehçesidir. Fransızca ve İtalyanca, İsviçre’nin resmi dilleri olduğundan bu Almanca lehçesi diğerlerinden çok daha farklıdır. Komşu diller telaffuz üzerinde kesinlikle izlerini bıraktılar. İsviçre-Alman lehçesini anlamak, diğer bölgelerden Almanca konuşanlar için bile zordur.
+
+Schwiizerdütsch’e örnek olarak; Türkçe: Kova, Hochdeutsch: Eimari, Schwiizerdütsch: Chübel.</p>
+
+<p>4-Bayerisch-Bavyera(Bayern) Lehçesi
+
+Bavyera Güneydoğu Almanya’dadır ve Bayerisch yazıldığında standart Almancaya çok benzer, ancak ünlülerin telaffuzunda farklılık gösterir. Bavyera’daki herkes standart Almancayı okuyabilir, yazabilir ve anlayabilir. Ancak, nadiren konuşma fırsatı bulurlar. Almanca / Hochdeutsch bu nedenle bu bölgede “Schriftdeutsch” veya Yazılı Almanca takma adını almıştır.
+
+Bayerisch’e örnek olarak; Türkçe: Sincap, Hochdeutsch: Eichhörnchen, Bayerisch: Oachkatzlschwoaf.</p>
+
+<p>5-Österreichisches Deutsch-Avusturya Almancası
+
+Avusturya Almancası diğerlerinden biraz farklıdır. Dilbilgisinde çoğunlukla aynı olsa da, Avusturya Almancası benzersiz bir kelime dağarcığına sahiptir. Bu Amerikan ve İngiliz İngilizcesi olarak düşünülebilir. Amerikalılar chips, İngilizler crisps der. Ancak her iki tarafın da bahsettiği şey aynıdır. Aynı durum Avusturya ve Almanya lehçeleri için de geçerlidir. Misal erik kelimesi Hochdeutsch olarak Pflaume, Österreichisches Deutsch olarak Zwetschge’dir.
+
+Österreichisches’e örnek olarak; Türkçe: Selam!, Hochdeutsch: Grüß Gott!, Österreichisches: Griaß di!</p>
+
+<p>6-Sächsisch-Yukarı Sakson Lehçesi
+
+Saksonya, Almanya’nın doğu bölgesinde bir eyalettir, bu nedenle Säschsisch öncelikle doğuda konuşulur. Dil, bilimsel olarak standart Almanca ve diğer lehçelere oldukça benzer, ancak birçok Almanca konuşanın güçlü duygulara sahip olduğu bir aksanı vardır.
+
+Sächsisch’e örnek olarak: Türkçe: Kafa, Hochdeutsch: Kopf, Sächsisch: Nischl.</p>
+
+<p>7-Berlinerisch- Berlin Almancası
+
+Berlin, Almanya’nın başkentidir. Zengin tarihi ve gelişen sanat sahnesiyle uluslararası bir merkez hâline geldi. Bu sebeptendirki Berlin lehçesinin temsil ettiği vurgu yavaş yavaş kaybolmaktadır. Berlin’in modernleşmesi onu küresel bir şehir haline getirdiğinden tüm yaşamları boyunca orada kalmış sadece birkaç kişi yaşıyor. Eğitimde de Hochdeutsch öğretilmesi bu lehçenin popülaritesini azaltmaktadır.
+
+Berlinerisch’e örnek olarak Türkçe: Gıcık İnsan, Hochdeutsch: hinterhältiger Mensch, Berlinerisch: Aas</p>
+
+<p>8-Pennsylvania Dutch-Pensilvanya Almancası-(Pennsilfaanisch Deitsch)
+
+Pennsylvania Dutch’ın aslında bir Alman lehçesi olduğunu pek kimse bilmiyor. ”Dutch” aslında ”Deutsch” olması gerekir. Alman göçmenlerin oluşturduğu bu Amerikan azınlık dili, Amerika Birleşik Devletleri’nin doğu kıyısında hâlâ yaşıyor.
+
+Pennsilfaanisch’e örnek olarak; Türkçe: Kaplumabağa, Hochdeutsch: Eine Schildkröte, Pennsylvanisch: En Shil-grut.</p>
+
+<p>Bu sayfada Referans alınan Kaynaklar
+
+Lehçelere verilen kelime örnekleri haricinde bu sayfada “1-” olarak belirtilen kaynak kullanılmıştır. Kelimeler için de sözlüklerden yararlanılmıştır.
+
+1- https://www.optilingo.com/blog/german/german-dialects/</p>`,
+
+   diltarih: `<p>Waldmann'ın 2020'de yazdığı makale'de o zamanı kastederek günümüzde 100 milyon kişi ile Almanca'nın Avrupa'nın en büyük dili olduğunu söylemiştir. Ancak bu dil sahip olduğu geniş Grammer yapısı ve kelime dağarcığı ile nereden geldi ve bugünkü hâline nasıl geldi?</p>
+      <p>Urgemanische Sprache-Proto Germen Dili
+Henüz Almanca mevzu bahis bile değilken MÖ 5. Yüzyılı arasında İlk Fonetik Değişimle bir ilkel Germen dili, Hint-Avrupa dil ailesinden ayrıldı. Bu ilk fonetik değişimi ise belirli seslerin zamanla değiştiği bir değişim sürecidir. Bu ilkel yada Proto-Germen dilinin ayrıntılı olarak nasıl inşaa edildiği pek iyi bilinmemektedir çünkü bu döneme ait yazılı kanıtlar çok nadirdir. Bu sebeple günümüzde yalnızca yeniden inşa edilebilir. Önceki Germenler mezarlarında ve kült nesnelerinde n fazla birkaç Runik yazıt bıraktılar, hikayeler ve ilahiler ise sözlü olarak aktarıldı. Bununla birlikte brauda(Brot-Ekmek) veya Gronpan(Griffin) gibi bazı germen terimleri şekil değiştirerek günümüze kadar gelmeyi başarmıştır.</p>
+      <p>Diutisc-Althochdeutsch-Eski Standart Almanca (MS 600-1050)
+Alman halkının göçü ve Hristiyanlığın yayılması sırasında, Alman dilinin gerçek tarihi MS 600 civarında başladı. Bir grup Batı Germen Dili, İkinci Fonetik Değişim olarak adlandırılan diğer Germen Lehçelerinden ayrıldı ve başlıkta da geçen Eski yüksek Almanca denilen şey ortaya çıktı. İkinci Fonetik Değişim, Alman tarihinde önemli bir dönüm noktasıdır. Bugün Pfanne, Zeit ve Tochter denilmesinin sebebi budur. Oysa Hollandaca ve İngilizce olarak sırasıyla Pan, Tijd/Time ve Dochter/Daughter denir. Ek olarak bu değişim süreci Almanca'yı farklı lehçelere bölmüştür. Örnek olarak kuzeydeki Düşük Almanca, İngilizce'de olduğu gibi eski sesleri (yani "pf" yerine "p" vb.) korumuştur. Bu durum günümüzde de İskandinav Lehçelerinde ve dillerinde görülmektedir.</p>
+      <p>Herzeliebez vrouwelin-Mittelhochdeutsch-Orta Zaman Standart Almancası(MS 1050 – 1350)
+Ritter, Minnesang ve Feodalizm; Yüksek Orta Çağ ekonomik ve kültürel yükseliş olarak değil de aynı zamanda politik parçalanma ile de karakterize edilmiştir.1050 yılından itibaren konuşulan alanlar ayrı ayrı bireysel egemenliğini ilan etmiş alanlarından oluşan bir yama halısına ayrıldı. Alman dili aynı şekilde tekrar gelişti ve her bölgenin kendisine ait lehçesi, her hanedanın kendi mahkeme şiiri vardı. Örneğin, Staufen İmparatorunun sarayında bu dönemde Nibelungenlied, Parzival ve Tristan gibi önemli destanlar ortaya çıktı. Ayrıca Walter von der Vogelweide Minnesangı ''Herzeliebez Vrouwelin'' gibi Orta Standart Almanca'da çırptı. Orta-yüksek Almanca, günümüz Almancasına çok benziyordu. Bir yandan Umlautlar (ä, ö, ü) tam çiçeklenmeye başladı, diğer yandan gerilmemiş heceler zayıfladı ve gerilmemiş son hecelerdeki sesli harfler zayıfladı (Eski Standart Almanca'da hōran, Orta Zaman Standart Almancası'nda hœren-hören olmuştur). Telaffuzdaki bu değişiklik gerçek bir zincirleme reaksiyona yol açtı. Sesli harflerin zayıflaması, daha önce farklı çekim sonlarının(Kasusendung) birbirine benzemesine neden oldu ve bu da bir ismin durumunu göstermeye devam etmek için makaleleri gerekli kıldı.</p>
+<p>Frühneuhochdeutsch-Erken Yeni Yüksek veya Standart Almanca
+Erken Yeni Yüksek Almanca ayrı bir döneme değer. Çünkü bu dönemde Almanca dil alanında önemli kültürel değişiklikler meydana geldi. Martin Luther, 1545 tarihli Kitab-ı Mukaddes çevirisiyle Almanca kelime dağarcığını ''Denkzettel, Feuereifer ve Lästermaul'' gibi sayısız sözcükle zenginleştirdi. Daha önce Ziege-Keçi (Geiss yerine) veya Ufer-Kıyı (Gestade yerine) gibi bölgesel ifadeler de tüm Almanca dil bölgelerinde tanınmaya yardımcı oldu. Fakat her şeyden önce, tek tip bir Almanca dilinin temelini attı. Çünkü Kitab-ı Mukaddes'in Almanca metninin yayılmasıyla Güney ve Orta Alman Lehçelerine dayanan Yeni Yüksek Almanca, Kuzey Almanya'da da giderek daha fazla hakim oldu. Johannes Gutenberg'in 1446 civarında kitap basımı gibi teknik yenilikler, Alman yazılı dilinin önem kazanmasına neden oldu. Tüm Lehçelerin konuşmacıları tarafından anlaşılan standart bölgesel diller oluşturuldu. Öte yandan, Aşağı Alman lehçeleri, Orta Çağ'da hala Alman lehçeleri arasında yer alan ve 16. yüzyılın sonunda bağımsız bir dil haline gelen Hollandaca hariç kendi yazılı dillerini geliştirmediler.</p>
+<p>Ulusal Dil Olarak Almanca 19. ve 20. Yüzyıllar
+Almanca konuşulan bölgelerin çoğunluğu 1871'de Alman Reich'i oluşturmak üzere bir araya geldiğinde, yeni ulus devletin dili için elbette tek tip bir yazım gerekliydi. Böylece Konrad Duden, 1880 yılında Alman dilinin tam ortografik sözlüğünü yayınladı. 1996 yılında yapılan Yazım Reformuna kadar uygulanmıştır.
+
+19.yüzyılda Sanayi Devrimi ile birlikte birçok teknik sözcük (Elektrizität-Elektrik, Waschmaschine-Çamaşır Makinesi, Eisenbahn-Demir Yolu) toplumsal yaşam alanında ise İngilizce ve Fransızcadan (Lokomotive-Lokomotif, Billet-Kütük, Telegramm-Telgraf) ödünç alınmıştır. 20. Yüzyıl'da da yeni icatlar ve toplumsal değişikler Almanca kelime dağarcığına ''Computer-Bilgisayar, Job-İş ve Team-Takım'' gibi çok sayıda İngilizce ödünç kelime eklenmesini sağlamıştır.
+
+20. yüzyılda telaffuz konusunda pek bir şey yapılmamış olsa da (sadece yuvarlanmış "r", daha çok rendelenmiş bir "r" ye yol açtı, Alman vakalarında sadeleştirme eğilimi gözlemlenebilir: Genitif (en azından konuşulan dilde) daha az ve daha az kullanılır, bunun yerine genellikle Dativ, örneğin "wegen dem Wetter" (Genitiv wegen des Wetters) ile değiştirilir.</p>
+<p>Günümüz Almancası Konuşanları Kadar Çeşitli Hâli
+İngilizce, Fransızca ve İspanyolca'dan farklı olarak Almanca, hiçbir zaman dünya dili hâline gelmedi. Bununla birlikte Alman dili, tekdüze olmaktan uzaktır. Çünkü yüzlerce ortaya çıkan Alman lehçeleri bugün hâlâ vardır. Büyük diyalektik çeşitlilik, Almanca'da bir ve aynı şey için sık sık birçok terimin bulunmasından da sorumludur. Sadece "bequeme Hausschuhe" ifadelerini düşünün: Schlappen, Latschen, Pantoffeln, Puschen, Finken, Patschen...
+
+Tüm dillerin doğasında olduğu gibi Almanca da kaçınılmaz olarak değişmeye devam ediyor. Bunun yanında yazı dili bile yeniliklerden uzak durmuyor. Haziran 2017'de Alman yazımında bugüne kadarki en son harf tanıtıldı. ß harfi yani okunuşuyla Eszett harfi.
+
+Bu konuda gördüğünüz bu yazılanlardan da referans alınan Sarah Waldmann durumu şöyle görmektedir; ''Genitiv, Dativ ve Akkusativ bir noktada tamamen kaybolacak ya da karmaşık hece Yapılarımızla üçüncü bir ses kayması temizlenecek, ancak büyük-büyük-büyük torunlarımız muhtemelen en erken öğreneceklerdir.''</p>
+<p>KAYNAKLAR
+
+https://de.babbel.com/de/magazine/geschichte-der-deutschen-sprache</p>`,
+    
+       deyim:`<p><b>ALMANCA DEYİMLER</b></p>
+      <p>Bütün deyimleri ne yazık ki barındırmaz.</p>
+      <p><b>Mir fällt nichts ein:</b> Anlamıyorum.</p>
+      <p><b>Mit Engelsgeduld:</b> Eyüp Sultan sabrıyla.</p>
+      <p><b>Der Faden verlieren:</b> Delirmek.</p>
+      <p><b>Alles in Butter:</b> Yerli yerinde.</p>
+      <p><b>Äpfel mit Birnen vergleichen:</b> Sapla samanı ayırt etmek/Elmalarla armutlar kıyaslanamaz.</p>
+      <p><b>Am seidenen Faden hängen:</b> Topun ağzında olmak.</p>
+      <p><b>Der Affe laust mich:</b> Bir yaşıma daha girdim.</p>
+      <p><b>Pech gehabt:</b> Kötü Talih.</p>
+      <p><b>Mit Kannonen auf Spatzen schießen:</b> Kuşlara toplarla saldırmak.</p>
+      <p><b>Murphy's gesetz:</b> Aksilik yasası.</p>
+      <p><b>Mit allen wassern gewaschen:</b> Kitabını yazmak.</p>
+      <p><b>Mir fällt ein Stein vom Herzen:</b> Yüreğime su serpildi.</p>
+      <p><b>Lampenfieber:</b> Sahne heyecanı/korkusu.</p>
+      <p><b>Jemanden die Leviten:</b> Birisine temiz fırça çekmek. <b>MUAMMA; TURSUN'UN NOTU:</b> (kitab-ı mukkadeste Levililer bölümü konu alınmıştır??)</p>
+      <p><b>Paroli bieten:</b> Efelenmek. <b>MAHİYET; TURSUN'UN NOTU:</b> Paroli; bir kumar sistemidir.</p>
+      <p><b>Lunte riechen:</b> Bir bit yeniği sezmek .</p>
+      <p><b>Pünktlich wie die Maurer:</b> Dakikası dakikasına (Mason gibi).</p>
+      <p><b>Das ist mir Wurst:</b> Takmıyorum.</p>
+      <p><b>Ich verstehe nur Bahnhof:</b> Anladıysam Arap olayım.</p>
+      <p><b>Ich glaub mein Schwein:</b> Vay Vay Vay(Şaşırma).</p>
+      <p><b>Mein Fehler:</b> Benim hatam.</p>
+      <p><b>Fix und Fertig sein:</b> Turşusu çıkmak.</p>
+      <p><b>Nach Schema F:</b> (rutin) Yasalara göre.</p>
+      <p><b>Nigelnagelneu sein:</b> Yepyeni olmak.</p>
+      <p><b>Wie der Schneider von Ulm sein:</b> Ulm terzisi gibi olmak.(Albrecht Berblinger)</p>
+      <p><b>Wie im Schlaraffenland leben:</b> Bir eli balda bir eli yağda.(Yer: Kokanya)</p>
+      <p><b>Wie Gott in Frankreich leben:</b> Lüks içinde yaşamak.</p>
+      <p><b>Wolf im Schafpelz:</b> Koyun postuna bürünmüş kurt.</p>
+      <p><b>Wie Kraut und Rüben:</b> Allak bullak.</p>`,
+
+      kulturdil: `<p><b>ALMANCA'NIN KÜLTÜREL PAYESİ</b></p>
+      <p>Öncelikle dil, resmi olarak veya dilsel işaretlerin yapısal bir sistemi olarak kabul edilmez. Bunun yerine, sosyal amaçlar ve kültürel bağlamlarda kullanılan bir iletişim aracı olarak anlaşılmaktadır. Bu nedenle odak noktası, dil kullanımının çeşitli ortamlarında, geleneksel ve bireysel davranış kalıplarına, sosyal normlara ve söylem topluluklarının kültürel değerlerine nasıl yansıdığıdır. Bir çevirinin arkasında genellikle A’dan B’ye basit bir aktarımdan daha fazlası vardır. Bir kelime bile hiçbir zaman başka bir dile tam olarak eşdeğer bir şekilde aktarılamaz, çünkü kültürel etkiler nedeniyle bile bilinen bir kelimenin anlamı değişebilir. Bu nedenle, dil süreçlerine Danışmanlık yaparken ve dil verilerinin toplu tedavisinde bu yönleri dikkate almak daha önemlidir.</p>
+      <p>Johannes Ebert, Almanca dili için şunları söylemektedir; “Küreselleşme, giderek daha fazla dilin yok olmasına neden oluyor. Bu bir gün Almanca için de geçerli olacak, çünkü Avrupa’da sadece İngilizce iletişim kurulacak mı? Hiç sanmıyorum. Almanca, Avrupa’nın en çok konuşulan ana dilidir ve canlı bir şekilde gelişmeye devam etmektedir.”</p>
+      <p>Bir dili gerçekten tanımlayan şey, genellikle kendi dilinden çok farklı olan kültür çevrelerinde ortaya çıkar. Bu durumda örnek olabilecek Japonya ülkesi vardır. İlk göze çarpan dilsel özelliklerden biri, yay ya da neredeyse melodik konuşma ritmi değil, herhangi bir Japonca konuşmada eksik olmaması gereken sürekli, doğrulayıcı “mh” idi! Almanca’da ise ” ja…mh….mh…ja…”, Japonca’da ihmal etmek anlamına gelir: seni dinlemiyorum!</p>
+      <p>Almanca dili için en kritik etki ve öneme sahip olan Alman federal hükümeti, resmî sitesinde bizzat şunlar yazılmıştır; “Alman dilinin öğretilmesi ve bakımı Federal Hükümet için büyük önem taşımaktadır. Federal Hükümet, kültürel, araştırma ve dış politika çerçevesinde, genel devlet önemine sahip kurumları ve projeleri teşvik etmekte ve böylece Alman dilini kültürel bir varlık olarak sürdürmeyi ve korumayı ve sürekli değişim ve gelişme sürecine eleştirel bir şekilde eşlik etmeyi hedeflemektedir. Bununla birlikte, anayasal olarak belirlenmiş görev bölünmesine göre, Almanca dil düzenlemelerinin sorumluluğu öncelikle eyaletlere aittir. Federal hükümetin temel yasaya göre – Federasyonun Hukuk ve İdari dili gibi Alt alanlar dışında – yasama yetkisi yoktur.“</p>
+      <p>Bu Sayfada Kullanılan Kaynaklar
+
+Alman federal hükümeti resmî sitesi: https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/staatsministerin-fuer-kultur-und-medien/kultur/deutsche-sprache-1891474
+
+Johannes Ebert; Die Globalisierung führt dazu, dass immer mehr Sprachen aussterben. Gilt das eines Tages auch für Deutsch, weil in Europa nur noch auf Englisch kommuniziert wird? https://www.goethe.de/de/uun/prs/int/gen/20490256.html</p>`,
+
+       mimar:`<p>Frankfurt’taki modern gökdelenler, kuzeyde yıllardır bulunan tuğla binalar, Münih’teki klasik müze tapınakları gibi eserlere bakılırsa Almanya’nın renkli bir mimari tarihe sahip olduğu söylenebilir. Özellikle Berlin gibi tarihsel olarak önemli şehirlerde etkileyici ve çok yönlü yapı manzarası vardır. Brandenburg Kapısı gibi turist çeken yerlerin dışında Başkent, aynı zamanda Gründrzeit’ın blok kenar mahallerine sahip geniş kapsamlı yapısıyla da bilinir. Rheinmetropole yani Köln denilince dünya çapında Köln Katedrali ve bir gotik mimari yapısı akla gelir. Frankfurt’ta ise herkesin aklına hemen 20. yüzyılın gökdelenleri gelir. O hâlde hangi mimari üslup ve özellikler Alman metropolleri için tipiktir?1</p>
+      <p>KARL FRİEDRİCH SCHİNKEL’DEN NORMAN FOSTER’A-BAROCK’TAN MODERN MİMARİYE</p>
+      <p>BERLİN-STADT DER ARCHİTEKTUR-MİMARLIK ŞEHRİ Tek başına Berlin bile mimarlık hayranlarını haftalarca orada tutabilecek zenginliğe sahiptir. Şehrin en güzel meydanlarının birisinde bulunan Fransız Katedrali, Alman Katedrali, Gendarmenmarkt ve daha fazlası…
+
+Mimar Friedrich Schinkel, Berlin’de Klassizmin başyapıtları olarak kabul edilen Neue Gar veya Alte Museum’u gerçekleştirdi. Bay Norman Forest, Almanya Bundestag’ın babası gibi görülebilecek ve yeniden canlandırılan Reichstag’ın 1999 yılından beri ziyaretçlere erişilebilir olan cam kubbeyi genel kurul salonunun üzerine yerleştirilmesine izin vermiştir.</p>
+      <p>Elbphilharmonie: Hamburg’un Simgesel Yapıları</p>
+      <p>Hamburg’un yeni dönüm noktası, 2017 yılında açılan Elbphilharmonie, Hafencity’de heybetli bir cam yapıya sahip ve eski bir mağazanın tuğla kaidesi üzerine inşa edilmiş bir Konser Salonu. Almanya’nın en büyük ikinci kentinin daha eski bir simgesi UNESCO tarafından Yüceltilmiş ve Mimar Fritz Höger tarafından eski şehrin Kontorhaus bölgesinde gerçekleştirilen Chilehaus, 1920’lerin tuğla Dışavurumculuğunun etkileyici bir örneğidir. Şili’den zengin bir adam olarak dönen ve inşa etmek için 4,8 milyon tuğla satın aldığı iddia edilen Hamburglu bir tüccarın bağışına borçludur. Binanın Tepesi bir gemi yayı andırıyor ve Avrupa’nın en sivri cephe açılarından biri. Üst katlar ofis olarak kiralanırken, avluya mağazalar, kafeler ve restoranlar ile serbestçe erişilebilir.</p>
+      <p>Dessau Kenti Orta Çağ tamamlanmış bir dönem olarak kabul edilebilir, Bauhaus’un Mirası ise günümüze kadar Sanat, Mimarlık ve kültürde yankılanır. 1919 yılında Gropius tarafından kurulan okulun büyük bir inşaat Topluluğu, Berlin’in güneybatısındaki Dessau’da bir buçuk saatlik bir sürüş mesafesindedir.</p>
+      <p>Truss Hayranları İçin: Quedlinburg Ortaçağ yapılarına meraklıysanız, Bavyera’daki küçük Nördlingen kasabasında da haklısınız. 2,6 kilometre boyunca, eski, kapalı ve 1400 yılı civarında kapalı olan şehir duvarı halkası tamamen erişilebilir. Bu da Almanya’da eşsiz.</p>
+      <p>Mühendis Aklı: Göltzschtalbrücke 1851’den beri vogtland, Saksonya’daki Reichenbach yakınlarındaki derin bir Vadiyi kapsayan köprü Yapım sanatının bir örneği: dünyanın en büyük tuğla Köprüsü. Göltzschtal Köprüsü, tamamlandığında 78 metre yüksekliğindeki dünyanın en yüksek Demiryolu Köprüsüydü. Alman mühendis Johann Andreas Schubert tarafından tasarlandı. Yürüyüş yolları binlerce Kemerden oluşan yapı boyunca devam ediyor. Köprünün 150 metreden muhteşem manzarası için komşu Mylau kasabasında bir balon yükselir. Event karakteri var.</p>
+      <p>Konutlar-Klasik Modernliğin Simgesi Berlin ve Hamburg’un yanı sıra, diğer büyük Alman şehirleri de mimari güzellikler sunuyor: Düsseldorf, örneğin Frank O’gehry’nin çarpık açılı binaları, Münih, Herzog ve Pierre de Meuron’un dış cephesinde renkli ışıklı Yastıklarla Stadyumu, Frankfurt am Main Avrupa’nın en yüksek gökdeleni, Sir Norman Foster tarafından tasarlanan Commerzbank Kulesi. Dresden, köpek kulübesi, kıyafet Evi ve yeniden inşa edilen Frauenkirche dahil olmak üzere Barok binaların bolluğu ile çekiyor.</p>
+      <p>Bu sayfada referans alınan kaynaklar:
+
+(1-) https://www.mcmakler.de/magazin/architektur-in-deutschland
+
+(2-) https://www.germany.travel/de/staedte-kultur/von-schinkel-bis-foster-faszinierende-architektur.html</p>`,
+
+      teknik: `<p><b>ALMANYA TEKNİK VE SANAYİSİNDEN ÖN BİLGİLER</b></p>
+      <p>Almanya’nın on yıllardır belirlediği Sanayi çağının geride bıraktığı binalar ve tesisler ve tüm mahalleler her zaman, bazı kişiler için etkileyicidir. Endüstriyel miras, Almanya’nın imajını da görsel olarak şekillendirmeye devam ediyor; terk edilmiş fabrikalar, kullanılmayan fabrika salonları, işçi yerleşimleri, madenler, madencilik sonrası manzaralar her yerde bulunabilir. Bu yapılar, yakın Almanya tarihi hakkında çok şey söyleyen, bölgelerin ve insanların nasıl geliştiğini gösteren çağdaş tanıklardır. Bu yerler kırsal bölgelerde de bulunabilir.1</p>
+      <p><b>Önemli Kişiler 2</b></p>
+      <p>1-Carl Friedrich Benz Carl Friedrich Benz (1844-1929), teknoloji tarihinin en önemli Mucitlerinden biridir. Mühendis Carl Benz’in 1 numaralı 1885 numaralı Patent motorlu otomobili ilk modern otomobil olarak kabul ediliyor. Daimler AG’DE(Mercedes-Benz Eski Adı), Otomotiv Mühendisliği öncüsü Carl Benz’in İnovasyon ruhu canlı tutuluyor. Stuttgart Bölgesi Otomobil endüstrisini Carl Benz geleneğinde görülüyor.</p>
+      <p>2-Ferdinand Graf von Zeppelin Ferdinand Graf von Zeppelin (1838-1917) adıyla Zeppelin zeplini, Alman ve uluslararası zeplin gemilerini birbirine bağlar. Süvari Generali ve zeplin Tasarımcısı Graf Zepelin Konstanz Gölü’nde doğdu ve ilk Zeplinleri orada yükseldi. Hava taşımacılığının gelişiminin biyografik ve tarihi yerleri Almanya ve Danimarka’da kuzeye doğru yer almaktadır.</p>
+      <p>3-Karl Wilhelm Otto Lilienthal Karl Otto Lilienthal (1848-1896), muhtemelen bir uçakla (asılı Planör) başarılı ve tekrarlanabilir bir şekilde kayma yapan ilk insandı. Otto Lilienthal, Kuş uçuşu ile ilgili deneysel hazırlık çalışmaları ile modern Havacılık için ön koşullar yarattı.</p>
+      <p>4-Gottlieb Daimler Gottlieb Daimler (1834-1900), teknoloji tarihinin en önemli Mucitlerinden biridir. Mühendis, tasarımcı ve Sanayici, ilk yüksek hızlı benzinli motoru ve içten yanmalı motorlu ilk dört tekerlekli motorlu aracı geliştirdi. Daimler AG’de(Mercedes-Benz Eski Adı) Otomotiv üretim Öncüsünün İnovasyon ruhu canlı tutuluyor.</p>
+      <p>5- Terzi Albrecht Berblinger Ulm Terzisi Albrecht Berblinger (1770-1829) bir uçuş cihazı tasarladı. 31 Mayıs 1811’de Berblinger ilk kez Kartal Kalesi’nden Tuna Nehri üzerinde uçmaya çalıştı ve suya düştü. 1986 yılında, uçuşa elverişlilik kanıtlandı. Uçak Belediye binasında hâlâ görülebilir.</p>
+      <p>6-Otto von Guericke Otto von Guericke (1602-1686), aynı zamanda hukukçu, fizikçi ve mucit olan nadir Alman Siyasetçilerden biriydi. Magdeburg yarım küreleri ile yapılan hava basıncı deneyleri onu tanıdı. Magdeburg, Eski Belediye Başkanı Otto von Guericke’nin anısını canlı tutan tek kişi değil.</p>
+      <p>7-Krupp Ailesi Adeta bir girişimci hanedanı olan Krupp Ailesi Essen ve Ruhr bölgesini şekillendirdi. Ekonomik güç ve etki, günümüze kadar devam eden bir efsane yarattı. Nasyonal sosyalizm döneminde kurumsal hayırseverliğin ve adaletsizliğin tanıklıkları da aynı şekilde not edilebilir. Essen ve Duisburg’da binalar, anıtlar, sanayi tesisleri ve halefi şirketler büyük bir Krupp endüstri geleneğini hatırlatıyor.</p>
+      <p>KAYNAKLAR
+1- https://www.kulturrat.de/themen/texte-zur-kulturpolitik/industriekultur-kulturpolitische-bilanz-und-mehr/
+
+2- ÖNEMLİ KİŞİLER: https://www.kulturreise-ideen.de/technik/personen-2.html</p>`,
+
+      tarih: `<p><b>GERMENLER VE ORTA ÇAĞ ALMANYA'SI TARİHİ</b></p>
+      <p><b>Germenler-Germanien</b></p>
+      <p>“Germanien” terimi, birkaç tarih öncesine dayanıyor ve Yunanca “Germanoi”den gelmektedir. Ancak kesin kökenleri bilinmemektedir. Bununla birlikte, kavramın kökeninin Kelt dillerine dayandığı ve ”Schreienden”(göze batanlar) yani ya da ”Nachbarn”(komşular) kelimelerinden türetildiği varsayılmaktadır. Roma İmparatorluğu döneminde bu terim, iki Roma Vilayetini ifade ediyordu: biri “Germania superior”, diğeri ise “Germania inferior”. Bu, Ren Nehri’nin sol tarafında Roma tarafından işgal edilen bölgelere işaret ediyordu. O zamanki Alman toprakları “Germania magna “veya” Germania libera ” olarak adlandırılmıştır. Daha sonra, yaklaşık 9. yüzyılda, Frenk İmparatorluğu bölündüğünde, Germania çoğunlukla Doğu kısmı veya Kutsal Roma İmparatorluğu’nun Alman kısmı için kullanıldı. Bu nedenle, Germenlerin, yani eski Alman tarihi, daha çok topraklarla sınırlıdır, daha az katı bir Halk ya da tek bir katı kültür ile sınırlıdır.</p>
+      <p><b>Orta Çağ Almanyası-Deutschland und das Mittelalter-(Wege aus der Finsternis)</b></p>
+      <p>Burada Orta Çağ zamanı, 800 ve 1500’lü yıllar olarak kapsama alınmıştır. Orta Çağ’ın başlarında önemli bir olay, Karolenj Fransa’nın dağılmasıydı. Ardından batı ve doğu Fransa’ya bölündü. Daha sonra bu iki taraftan Fransa ve Almanya oluşacaktı. Doğu Fransa’da bağımsız bir Alman kimliği henüz mevcut değildi, ama Eski Yüksek Alman Dili, birleştirici bir karaktere sahip bir dil olarak gelişti. Politik olarak, Liudolfinger Hanedanı 10. yüzyılda Ostfranken(Doğu Frankonya)’da güç kazandı ve Roma İmparatoru oldu. Böylece, daha sonra Kutsal Roma İmparatorluğu olarak bilinen Roma-Alman İmparatorluğu kuruldu. Ortaçağda Roma-Alman İmparatorluğu’nun var olmasına rağmen bu henüz birleşik bir Almanya olarak kabul edilemez. Güç, birçok toprak sahibi arasında daha fazla dağıldı, bu da bugün Alman Federalizminde hala görülebilir. Farklı Prenslikler arasında da birçok çatışma vardı, bu yüzden sürekli bir birlik yoktu.</p>
+      <p><b>ORTA CAGDAN NAZI ALMANYASINA KADAR TARIH</b></p>
+      <p>1500-1558: Charles V: Kutsal Roma İmparatorluğu'nun son güçlü İmparatoru; Luther ve Reformasyona karşı savaştı. Almanya onun için sadece Burgonya/ İspanyol İmparatorluğunun bir yan Ülkesiydi.</p>
+      <p>1517: Martin Luther (1483-1546) 95 Thesen gegen den Ablass [= günahkarların Araf'taki zamanını kısaltmak için kilise tarafından satılan (genellikle yozlaşmış) hoşgörüler].</p>
+      <p>1534: Luther, İncil'in Almanca'ya çevirisini bitirir.</p>
+      <p>1555: Augsburg Dini barışı: V. Charles Protestanlığa karşı mücadeleyi kaybeder ve Alman prenslerinin kendi toprakları için Protestanlık ile Katoliklik arasında seçim yapmalarına izin vermelidir. Almanların çoğu, kısmen Almanların Roma Kilisesi tarafından sömürülmesine tepki olarak Protestanlığı seçmektedir.</p>
+      <p>1618-1648: Otuz Yıl Savaşı. Savaş bir inanç Savaşı olarak başladı ve Katolik Habsburg imparatorları (İspanya, Avusturya, Bohemya, İtalya ve Güney Hollanda'nın büyük bir bölümünü kontrol eden ve Katolik Alman Prenslerinin yardımıyla Almanya'daki geleneksel güçleri için savaşan) ile Protestan Fransızlar ve İsveçliler (Protestan Alman Prenslerinin yardımıyla) arasında bir güç mücadelesi olarak sona erdi. Savaşın sonuçları: Din özgürlüğü-Alman topraklarının imhası ve Yoksullaşması-Fransa Avrupa'nın en güçlü ülkesi olacaktır.-Kutsal Roma İmparatorluğu anlamsız bir formalite olacaktır.</p>
+      <p>1683-1714: Türklere karşı yapılan savaşlarda ve İspanyol ardıl Savaşında Avusturya, Avrupa'nın büyük bir gücü haline geldi.</p>
+      <p>1756-1763: Yedi Yıl Savaşı. II. Friedrich (1712-1786) döneminde Prusya, Avrupa'nın büyük bir gücü haline geldi ve bundan sonra giderek artan bir şekilde Avusturya'ya karşı Almanya'da Güç ve etki mücadelesini kazandı.</p>
+      <p>1772-1795: Polonya'nın üç Bölümü. Prusya, Avusturya ve Rusya Polonya'yı kendi aralarında bölerler.</p>
+      <p>1789: Prusya ve Avusturya'nın şiddetle mücadele ettiği Fransız Devrimi gerçekleşir.</p>
+      <p>1815: 2. Napolyon'un yenilgisinden sonra Paris barışı. Fransız Devrimi'ne ve daha sonra Napolyon'a karşı mücadele ile Kutsal Roma İmparatorluğu resmen sona erer ve aynı zamanda küçük Alman devletlerinin sonu başlar. Şimdi, Frankfurt'ta (Cumhurbaşkanı Avusturya tarafından atanan) bir Bundestag ile aciz bir Alman konfederasyonu vardir, ancak çok az güce sahiptirler. Prusya ve Avusturya, gelişen demokratik özlemleri başarıyla bastırmaya devam ettiler.</p>
+      <p>1848: Mart devrimi. Avusturya'da muhafazakar bakan Kont Metternich görevden alındı ve Alman Federasyonunda liberal bir ulusal meclis demokratik olarak seçildi, ancak Avusturya ve Prusya reformları engellemeye devam etti.</p>
+      <p>1861: I. Prusya Kralı oldu ve 1862'de Otto von Bismarck'ı Başbakan olarak atadı.</p>
+      <p>1866: Bismarck, Alman Konfederasyonu'nun soyu tükenmiş olduğunu ilan eder ve Prusya, Königgratz Savaşı'nda avusturya ile sonuçlanan savaşı kazanır ve böylece yeni "Kuzey Alman Konfederasyonu"nda Alman eyaletlerinin etkin kontrolünü kazanır.</p>
+      <p>1875: Almanya Sosyal Demokrat Partisi'nin (SPD) kuruluşu, Sosyal Demokrat İşçi Partisi ve genel Alman işçi Derneği'nin birleşmesinden kaynaklandı.</p>
+      <p>1878: Bismarck'ın "Sosyalist Yasası" (iki suikast girişiminden sonra) tüm sosyalist ve komünist Dernekleri yasaklar, ancak SPD'Yİ yasaklamaz. Yasa 1890'a kadar uzatıldı ve SPD'NİN daha da güçlenmesine engel olamadı.</p>
+      <p>1883/1889: Bismarck sosyal sigortayı kurdu. Ancak bu, muhafazakar Hükümeti ile işçi sınıfı arasındaki gerginliği hafifletmeye yetmedi.</p>
+      <p>1914-1918: Birinci Dünya Savaşı, Avusturya-Macaristan Arşidük Franz Ferdinand'ın Saraybosna'da öldürülmesiyle başladı. Versailles Antlaşması'nda Almanya Kolonilerini, Alsace-Lorraine'i Fransa ve Posen'e ve "Polonya koridoru" nun Polonya'ya kaybediyor; Almanya önemli tazminatlar ödemek ve Rheinland'ı askerden arındırmak zorunda. (Mart 1918'de Almanya'nın Rusya ile imzaladığı Brest-Litovsk Barışından daha cömert bir barış anlaşması. Rusya Almanya'ya çok fazla toprak vermeli, Polonya, Gürcistan ve Ukrayna'nın bağımsızlığını tanımalı ve Almanya'ya büyük tazminat ödemeye mahkum oldu.)</p>
+      <h1><b>1 DAKİKADA TARİH; ALMANYA</b></h1>
+      <p style="font-size: 22px;"><b>1 DAKİKADA NAZİ ALMANYASI</b></p>
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/QycURXf_mB4?si=gzm6Yzvn3hO_uuiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000;"></iframe>
+      <p style="font-size: 22px;"><b>1 DAKİKADA FEDERAL ALMANYA CUMHURİYETİ TARİHİ</b></p>
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/lUAsnAa4yoE?si=iTxeSLV03uvC2LNl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000;"></iframe>
+      
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/ok26x8NkYVM?si=cOhPE6pzzRj9vuAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000; margin-top: 25px;"></iframe>
+      
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/CksGXl6oa3c?si=xF2JvTru2C718RwJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000; margin-top: 25px;"></iframe>
+      
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/hdYzRtZXy64?si=xiPzWQ_-wiob2210" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000; margin-top: 25px;"></iframe>
+      
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Q1VQYnfKJFg?si=DLYmlv2wtv2Tg8Tp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000; margin-top: 25px;"></iframe>
+      
+      <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/JdwfhP_Om8w?si=T94xOsL4hyUmhKds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000; margin-top: 25px;"></iframe>`,
+      
 
       };
       
@@ -785,6 +1420,8 @@ document.addEventListener("DOMContentLoaded", function () {
 @media only screen and (min-width: 480px){
 
 
+
+
   #tog{
     display: none;
   }
@@ -802,8 +1439,8 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 
 .loading-animation {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border: 3px solid transparent;
   border-top-color: #FFC000;
   border-radius: 50%;
@@ -831,15 +1468,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   .inin{
-    margin: 50px auto ;
-    background-color: #000000;
-    height: 100%;
-    width: 25%;
+    
+    background-color: transparent;
+    width: fit-content;
     border-color: #f5f5f7;
-    border-style: solid;
-    border-radius: 5rem;
+    border-style: double;
+    border-radius: 3rem;
     display: block;
     margin-bottom: 0;
+    text-align: center;
+    margin: 35px auto ;
+    height: fit-content;
   }
   
   .sr{
@@ -876,7 +1515,7 @@ document.addEventListener("DOMContentLoaded", function () {
     background-color: #f5f5f7;
     border-radius: 25px;
     padding: 0.5rem 0.1rem;
-    font-size: 17px;
+    font-size: 17.4px;
     width: 80%;
     line-height: 1.9;
     margin: 0 auto;
@@ -978,16 +1617,39 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 
         .bottom{
-            text-align: center;
+            display: inline-block;
+            position: relative;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 450;
+            font-weight: 400;
             color: #f5f5f7;
-            font-size: 18px;
+            font-size: 19.2px;
+        }
+
+        .bottom::after{
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 1px;
+          bottom: 0;
+          left: 0;
+          background-color: #f5f5f7;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+
+        .bottom:hover{
+          cursor: pointer;
+        }
+
+        .bottom:hover::after{
+          transform: scaleX(1);
+          transform-origin: bottom left;
         }
 
         html{
           background-color: #1b2845;
-          background-image: linear-gradient( #274060, #192642);
+          background-image: linear-gradient(315deg, #1b2845 0%, #274060 84%);
           scroll-behavior: smooth;
           -webkit-user-select: none;
           user-select: none;
