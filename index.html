@@ -207,6 +207,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".toggle");
+      const listItems = document.querySelectorAll(".list-item");
+      const originalContent = document.querySelector(".izah");
+      const izParagraph = document.querySelector(".iz");
+      const replacementContent = `<p style="font-size: 25px;"><b>Bilinmesi Gereken Alman Jestleri</b></p>
+      <p><b><i>1-Beni Ahmak Yerine Koyuyorsun!-Du willst mich voll für dumm verkaufen!</i></b></p>
+      <img src="yeniyine.gif" alt="hj" style="width: 60%; border-radius: 20px;">
+      <p>Bu Jestte, konuşmacı düz elini yüzünün önünde sallar ve ön cam sileceği gibi hareket ettirir</p>
+      <p><b><i>3-Göz Kapağını Aşağıya Çekmek</i></b></p>
+      <img src="jajaja.gif" alt="hj" style="width: 60%; border-radius: 20px;">
+      <p>Bu hareketi yaparken, işaret parmağını alır ve göz kapağının altına yerleştirir ve biraz aşağı çeker. Bu jest iğneleyici bir sözü işaret eder ve bir şeyin şaka olduğunu yani ciddi olmadığını söyler.</p>`;
+      let isReplaced = false;
+
+      listItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          if (item.getAttribute("data-content") === "beden") {
+            if (!isReplaced) {
+              originalContent.innerHTML = replacementContent;
+              izParagraph.textContent = "BEDEN DİLİ";
+              isReplaced = true;
+            }
+          }
+        });
+      });
+
+      toggleButton.addEventListener("click", () => {
+        if (isReplaced) {
+          originalContent.innerHTML = replacementContent;
+          izParagraph.textContent = "BEDEN DİLİ";
+        } else {
+          originalContent.innerHTML = "";
+          izParagraph.textContent = "İZAH:";
+        }
+      });
+});
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1308,6 +1353,13 @@ Mimar Friedrich Schinkel, Berlin’de Klassizmin başyapıtları olarak kabul ed
       
       <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/JdwfhP_Om8w?si=T94xOsL4hyUmhKds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000; margin-top: 25px;"></iframe>`,
       
+      beden: `<p style="font-size: 25px;"><b>Bilinmesi Gereken Alman Jestleri</b></p>
+      <p><b><i>1-Beni Ahmak Yerine Koyuyorsun!-Du willst mich voll für dumm verkaufen!</i></b></p>
+      <img src="yeniyine.gif" alt="hj" style="width: 60%; border-radius: 20px;">
+      <p>Bu Jestte, konuşmacı düz elini yüzünün önünde sallar ve ön cam sileceği gibi hareket ettirir</p>
+      <p><b><i>3-Göz Kapağını Aşağıya Çekmek</i></b></p>
+      <img src="jajaja.gif" alt="hj" style="width: 60%; border-radius: 20px;">
+      <p>Bu hareketi yaparken, işaret parmağını alır ve göz kapağının altına yerleştirir ve biraz aşağı çeker. Bu jest iğneleyici bir sözü işaret eder ve bir şeyin şaka olduğunu yani ciddi olmadığını söyler.</p>`,
 
       };
       
