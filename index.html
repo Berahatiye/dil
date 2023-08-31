@@ -22,44 +22,70 @@
           <div class="loading-animation"></div>
         </div>
         <ul class="list">
-          <li class="list-item" style="--delay:0.4s" data-content="soz" onclick="myFunction()">ATASÖZLERİ</li>
-          <li class="list-item" style="--delay:0.4s" data-content="beden" onclick="myFunction()">BEDEN DİLİ</li>
-          <li class="list-item" style="--delay:0.4s" data-content="deyim" onclick="myFunction()">DEYİMLER VE MECAZİ KULLANIM</li>
-          <li class="list-item" style="--delay:0.4s" data-content="diltarih" onclick="myFunction()">DİLİN TARİHİ</li>
-          <li class="list-item" style="--delay:0.4s" data-content="kulturdil" onclick="myFunction()">KÜLTÜREL DİL</li>
-          <li class="list-item" style="--delay:0.4s" data-content="lehce" onclick="myFunction()">LEHÇELER</li>
-          <li class="list-item" style="--delay:0.4s" data-content="yazıdil" onclick="myFunction()">YAZI DİLİ</li>
-          <li class="list-item" style="--delay:0.4s" data-content="din" onclick="myFunction()">DİNÎ</li>
-          <li class="list-item" style="--delay:0.4s" data-content="edebiyat" onclick="myFunction()">EDEBİ</li>
-          <li class="list-item" style="--delay:0.4s" data-content="felsefe" onclick="myFunction()">FELSEFİ</li>
-          <li class="list-item" style="--delay:0.4s" data-content="hayvan" onclick="myFunction()">HAYVANLAR</li>
-          <li class="list-item" style="--delay:0.4s" data-content="iklim" onclick="myFunction()">İKLİM</li>
-          <li class="list-item" style="--delay:0.4s" data-content="kent" onclick="myFunction()">KENTLER VE BELLEKLERİ MÜZELER</li>
-          <li class="list-item" style="--delay:0.4s" data-content="mimar" onclick="myFunction()">MİMARİ</li>
-          <li class="list-item" style="--delay:0.4s" data-content="gun" onclick="myFunction()">ÖNEMLİ GÜNLER</li>
-          <li class="list-item" style="--delay:0.4s" data-content="sanat" onclick="myFunction()">SANAT</li>
-          <li class="list-item" style="--delay:0.4s" data-content="sembol" onclick="myFunction()">SEMBOLLER</li>
-          <li class="list-item" style="--delay:0.4s" data-content="spor" onclick="myFunction()">SPOR</li>
-          <li class="list-item" style="--delay:0.4s" data-content="ulasim" onclick="myFunction()">ULAŞIM</li>
-          <li class="list-item" style="--delay:0.4s" data-content="tarih" onclick="myFunction()">TARİHÎ</li>
-          <li class="list-item" style="--delay:0.4s" data-content="teknik" onclick="myFunction()">TEKNİK VE SANAYİ</li>
-          <li class="list-item" style="--delay:0.4s" data-content="toplum" onclick="myFunction()">TOPLUM</li>
+          <li class="list-item" style="--delay:0.4s" data-content="soz" onclick="showDivs(); myFunction()">ATASÖZLERİ</li>
+          <li class="list-item" style="--delay:0.4s" data-content="beden" onclick="showDivs(); myFunction()">BEDEN DİLİ</li>
+          <li class="list-item" style="--delay:0.4s" data-content="deyim" onclick="showDivs(); myFunction()">DEYİMLER VE MECAZİ KULLANIM</li>
+          <li class="list-item" style="--delay:0.4s" data-content="diltarih" onclick="showDivs(); myFunction()">DİLİN TARİHİ</li>
+          <li class="list-item" style="--delay:0.4s" data-content="kulturdil" onclick="showDivs(); myFunction()">KÜLTÜREL DİL</li>
+          <li class="list-item" style="--delay:0.4s" data-content="lehce" onclick="showDivs(); myFunction()">LEHÇELER</li>
+          <li class="list-item" style="--delay:0.4s" data-content="yazıdil" onclick="showDivs(); myFunction()">YAZI DİLİ</li>
+          <li class="list-item" style="--delay:0.4s" data-content="din" onclick="showDivs(); myFunction()">DİNÎ</li>
+          <li class="list-item" style="--delay:0.4s" data-content="edebiyat" onclick="showDivs(); myFunction()">EDEBİ</li>
+          <li class="list-item" style="--delay:0.4s" data-content="felsefe" onclick="showDivs(); myFunction()">FELSEFİ</li>
+          <li class="list-item" style="--delay:0.4s" data-content="hayvan" onclick="showDivs(); myFunction()">HAYVANLAR</li>
+          <li class="list-item" style="--delay:0.4s" data-content="iklim" onclick="showDivs(); myFunction()">İKLİM</li>
+          <li class="list-item" style="--delay:0.4s" data-content="kent" onclick="showDivs(); myFunction()">KENTLER VE BELLEKLERİ MÜZELER</li>
+          <li class="list-item" style="--delay:0.4s" data-content="mimar" onclick="showDivs(); myFunction()">MİMARİ</li>
+          <li class="list-item" style="--delay:0.4s" data-content="gun" onclick="showDivs(); myFunction()">ÖNEMLİ GÜNLER</li>
+          <li class="list-item" style="--delay:0.4s" data-content="sanat" onclick="showDivs(); myFunction()">SANAT</li>
+          <li class="list-item" style="--delay:0.4s" data-content="sembol" onclick="showDivs(); myFunction()">SEMBOLLER</li>
+          <li class="list-item" style="--delay:0.4s" data-content="spor" onclick="showDivs(); myFunction()">SPOR</li>
+          <li class="list-item" style="--delay:0.4s" data-content="ulasim" onclick="showDivs(); myFunction()">ULAŞIM</li>
+          <li class="list-item" style="--delay:0.4s" data-content="tarih" onclick="showDivs(); myFunction()">TARİHÎ</li>
+          <li class="list-item" style="--delay:0.4s" data-content="teknik" onclick="showDivs(); myFunction()">TEKNİK VE SANAYİ</li>
+          <li class="list-item" style="--delay:0.4s" data-content="toplum" onclick="showDivs(); myFunction()">TOPLUM</li>
         </ul>
       </div>
     </div>
 
+      
       <p class="iz">İZAH:</p>
 
-      <button type="button">Click Me!</button>
+      <div id="btn">
+       <span class="op"></span>
+       <span class="ap"></span>
+      </div>
 
-      <p class="izah">Yapımı 2022 yılında başlanıp asıl amacı "TÜBİTAK; 53. Liselerarası Proje Yarışması" adlı etkinliğe katılmak olan bu çalışma, Berat Can TURSUN'un şahsî eseridir. Zat, çalışmaya ait içeriklerin orijinal hâli ile bu sitede tekrar yayınlanması gerektiğine kanaat verdi. Müsebbibi ise çalışmanın yayınladığı ilk sitenin mülevves tasarımıdır. Tüm bunların ifasında, içerikler arasındaki tagayyürlerden birisi çalışmanın adıdır. İşbu etkinliğe katılma aşamalarında kullanılan ad: "Dilleri Kültürü İle Tanımak: Harmanlanmış Öğrenme İle Yabancı Dil Olarak Almanca Örneği"dir. Yeni ad ise sitenin ser'inde görülür. Ayrıca ilk sitede veya çalışmada; dilin işlevleri ve kültürün işlevleri şeklinde iki ayrı kategori oluşturulup içerikler buna göre sınıflandırılmışlardı. Şu anki eserde ise zat-ı muhterem tarafından bunun bir lüzumu olmadığı görülmüştür ve tüm içerikler 'Kültürün İşlevleri'nde sıralanır vaziyettedir.</p>
-    
+       <p class="izah">Yapımı 2022 yılında başlanıp asıl amacı "TÜBİTAK; 53. Liselerarası Proje Yarışması" adlı etkinliğe katılmak olan bu çalışma, Berat Can TURSUN'un şahsî eseridir. Zat, çalışmaya ait içeriklerin orijinal hâli ile bu sitede tekrar yayınlanması gerektiğine kanaat verdi. Müsebbibi ise çalışmanın yayınladığı ilk sitenin mülevves tasarımıdır. Tüm bunların ifasında, içerikler arasındaki tagayyürlerden birisi çalışmanın adıdır. İşbu etkinliğe katılma aşamalarında kullanılan ad: "Dilleri Kültürü İle Tanımak: Harmanlanmış Öğrenme İle Yabancı Dil Olarak Almanca Örneği"dir. Yeni ad ise sitenin ser'inde görülür. Ayrıca ilk sitede veya çalışmada; dilin işlevleri ve kültürün işlevleri şeklinde iki ayrı kategori oluşturulup içerikler buna göre sınıflandırılmışlardı. Şu anki eserde ise zat-ı muhterem tarafından bunun bir lüzumu olmadığı görülmüştür ve tüm içerikler 'Kültürün İşlevleri'nde sıralanır vaziyettedir.</p>
 
      <div class="inin">
         <p class="bottom" onclick="location.href='https://www.facebook.com/profile.php?id=100093580601707&mibextid=ZbWKwL'">Berat Can TURSUN | 2022-2023</p>
      </div>
 
 <script>
+function showDivs() {
+    var opDiv = document.querySelector('.op');
+    var apDiv = document.querySelector('.ap');
+
+    opDiv.style.display = 'block';
+    apDiv.style.display = 'block';
+}
+
+btn.addEventListener('click', () => {
+
+  btn.style.display = 'none';
+});
+
+
+
+
+
+
+
+
+
+
+
 
 
 function myFunction() {
@@ -1957,8 +1983,36 @@ document.addEventListener("DOMContentLoaded", function () {
           -webkit-user-select: none;
           user-select: none;
           -moz-user-select: none;
-          
         }
+
+.op{
+  display: block;
+  margin-top: -4px;
+  width: 70px;
+  height: 4px;
+  background: #f5f5f7;
+  border-radius: 6px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.ap{
+  display: block;
+  margin-top: -4px;
+  width: 70px;
+  height: 4px;
+  background-color: #f5f5f7;
+  border-radius: 6px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.op, .ap{
+    display: none;
+}
+
 }
 
 
@@ -2035,6 +2089,7 @@ document.addEventListener("DOMContentLoaded", function () {
     width: max-content;
     border-color: #f5f5f7;
     border-style: solid;
+    border-width: 2px;
     border-radius: 6rem;
     display: block;
     margin-bottom: 0;
@@ -2089,7 +2144,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
-.container {
+.containerr {
   box-sizing: border-box;
   font-family: sans-serif;
   display: flex;
@@ -2192,7 +2247,7 @@ document.addEventListener("DOMContentLoaded", function () {
           position: absolute;
           width: 100%;
           transform: scaleX(0);
-          height: 3px;
+          height: 2px;
           bottom: 0;
           left: 0;
           background-color: #f5f5f7;
