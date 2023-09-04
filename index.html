@@ -14,6 +14,7 @@
     </header> 
 
 
+
     <div class="container">
       <div class="menu">
         <input type="checkbox" id="toggle" class="toggle-checkbox">
@@ -58,7 +59,57 @@
      </div>
 
 
+
 <script>
+
+
+window.onload = function() {
+            window.scrollTo(0, 0);
+};
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector(".toggle");
+      const listItems = document.querySelectorAll(".list-item");
+      const originalContent = document.querySelector(".izah");
+      const izParagraph = document.querySelector(".iz");
+      const replacementContent = `<h2>Bayern(Bavyera) Eyaletindeki Müzeler</h2>
+        <div class="slideshow-container">
+        <img class="ress" src="https://dillerinkulturu.files.wordpress.com/2023/01/buchheim-museum-der-phantasie-in-bernried-am.jpg?w=1024" alt="Image 1">
+        <div class="text-container">
+          Hayatı boyunca yazar, film yapımcısı ve ressam Lothar-Günther Buchheim resim ve eserler topladı. Artık ziyaretçiler koleksiyonunu Starnberg Gölü’nün yanındaki müzede görebilirler. Buchheim Museum der Phantasie-Bernried İlçesi.
+        </div>
+        
+        <a class="prev" onclick="changeSlide(-1)">❮</a>
+        <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>`;
+      let isReplaced = false;
+
+      listItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          if (item.getAttribute("data-content") === "kent") {
+            if (!isReplaced) {
+              originalContent.innerHTML = replacementContent;
+              izParagraph.textContent = "KENT";
+              isReplaced = true;
+            }
+          }
+        });
+      });
+
+      toggleButton.addEventListener("click", () => {
+        if (isReplaced) {
+          originalContent.innerHTML = replacementContent;
+          izParagraph.textContent = "KENT";
+        } else {
+          originalContent.innerHTML = "";
+          izParagraph.textContent = "İZAH:";
+        }
+      });
+});
+
+
 
 
 
@@ -1968,7 +2019,18 @@ Mimar Friedrich Schinkel, Berlin’de Klassizmin başyapıtları olarak kabul ed
   <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
     src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFUXPMzgK0&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
   </iframe>
-</div>`,        
+</div>`,    
+
+       kent: `<h2>Bayern(Bavyera) Eyaletindeki Müzeler</h2>
+        <div class="slideshow-container">
+        <img class="ress" src="https://dillerinkulturu.files.wordpress.com/2023/01/buchheim-museum-der-phantasie-in-bernried-am.jpg?w=1024" alt="Image 1">
+        <div class="text-container">
+          Hayatı boyunca yazar, film yapımcısı ve ressam Lothar-Günther Buchheim resim ve eserler topladı. Artık ziyaretçiler koleksiyonunu Starnberg Gölü’nün yanındaki müzede görebilirler. Buchheim Museum der Phantasie-Bernried İlçesi.
+        </div>
+        
+        <a class="prev" onclick="changeSlide(-1)">❮</a>
+        <a class="next" onclick="changeSlide(1)">❯</a>
+    </div>`,
         
       };
       
@@ -2100,10 +2162,102 @@ document.addEventListener("DOMContentLoaded", function () {
             appendLazyImages(imagesToLoad);
         });
 
+
+
+
+
+        let slideIndex = 0;
+        showSlide(slideIndex);
+
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function showSlide(n) {
+            const images = ["https://dillerinkulturu.files.wordpress.com/2023/01/buchheim-museum-der-phantasie-in-bernried-am.jpg?w=1024", "https://dillerinkulturu.files.wordpress.com/2023/01/csm_luftmuseum_10-2017_0012_1500_6c86cd686f.jpg?w=1024", "https://dillerinkulturu.files.wordpress.com/2023/01/esm-sammlung-edwin-scharff-hockende-foto-niks.jpg?w=1024"];
+            const texts = [
+                "Hayatı boyunca yazar, film yapımcısı ve ressam Lothar-Günther Buchheim resim ve eserler topladı. Artık ziyaretçiler koleksiyonunu Starnberg Gölü’nün yanındaki müzede görebilirler. Buchheim Museum der Phantasie-Bernried İlçesi.",
+                "Amberg’deki Engelsburg Kalesi’ndeki Hava Müzesi, toplam 650 metrekarelik üç kata yayılmış, duyabileceğiniz, görebileceğiniz ve dokunabileceğiniz havaya sahiptir.",
+                "Neu-Ulm Edwin Scharff Müzesi, Almanya’daki sanatçının eserlerine ve modern sanatına adanmış sergi salonlarının yanı sıra etkileşimli bir çocuk müzesi içeren eşsiz bir kurumdur.",
+            ];
+
+            if (n >= images.length) {
+                slideIndex = 0;
+            }
+
+            if (n < 0) {
+                slideIndex = images.length - 1;
+            }
+
+            const imgElement = document.querySelector('.slideshow-container img');
+            const textElement = document.querySelector('.text-container');
+
+            imgElement.src = images[slideIndex];
+            textElement.innerText = texts[slideIndex];
+        }
 </script>
 
 <style>
 @media only screen and (min-width: 480px){
+
+  .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .ress {
+            max-width: 50%;
+            border-radius: 20px;
+        }
+
+        .text-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #fff;
+            padding: 8px;
+            max-height: 100px; /* Set the maximum height for the scrollable text container */
+            overflow-y: auto; /* Enable vertical scroll if text exceeds the container height */
+            border-radius: 10px;
+        }
+
+        .prev, .next {
+            font-size: 42px;
+            cursor: pointer;
+        }
+
+        .prev {
+            float: left;
+        }
+
+        .next {
+            float: right;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2171,7 +2325,7 @@ document.addEventListener("DOMContentLoaded", function () {
   .sr{
             font-family: 'Parisienne', cursive;;
             font-size: 3.1rem;
-            font-weight: 600;
+            font-weight: 500;
             text-align: center;
             top: 0;
             background: -webkit-linear-gradient(#ffffff, #acabab);
