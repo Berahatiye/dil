@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const listItems = document.querySelectorAll(".list-item");
       const originalContent = document.querySelector(".izah");
       const izParagraph = document.querySelector(".iz");
-      const replacementContent = `<h2>Bayern(Bavyera) Eyaletindeki Müzeler</h2>
+      const replacementContent =  `<h2>Bayern(Bavyera) Eyaletindeki Müzeler</h2>
         <div class="slideshow-container">
         <img class="ress" src="https://dillerinkulturu.files.wordpress.com/2023/01/buchheim-museum-der-phantasie-in-bernried-am.jpg?w=1024" alt="Image 1">
         <div class="text-container">
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const listItems = document.querySelectorAll(".list-item");
       const originalContent = document.querySelector(".izah");
       const izParagraph = document.querySelector(".iz");
-      const replacementContent = `<p style="font-size: 20px;">İlk sitede "MÜZİK" bölümü için kullanılan 'Berat Can TURSUN'un tasarımı:</p>
+      const replacementContent = `<p style="font-size: 20px;">İlk sitede "MÜZİK" bölümü için kullanılan tasarım:</p>
         <img loading="lazy" src="https://dillerinkulturu.files.wordpress.com/2023/02/ornekdlkultur.jpg?w=1024" alt="hj" style="width: 60%; border-radius: 20px;">
         
         <h1>Almanya Musikîsi</h1>
@@ -1918,7 +1918,7 @@ Mimar Friedrich Schinkel, Berlin’de Klassizmin başyapıtları olarak kabul ed
       <img loading="lazy" src="https://dillerinkulturu.files.wordpress.com/2023/02/almanmarsdilkultur.jpeg?w=1024" alt="hj" style="width: 60%; border-radius: 20px;">
       <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/Xsu9cwwIiuw?si=dqFY7_MFxKsxyw0R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:20px; -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000;"></iframe>`,
 
-      sanat: `<p style="font-size: 20px;">İlk sitede "MÜZİK" bölümü için kullanılan 'Berat Can TURSUN'un tasarımı:</p>
+      sanat: `<p style="font-size: 20px;">İlk sitede "MÜZİK" bölümü için kullanılan tasarım:</p>
         <img loading="lazy" src="https://dillerinkulturu.files.wordpress.com/2023/02/ornekdlkultur.jpg?w=1024" alt="hj" style="width: 60%; border-radius: 20px;">
         
         <h1>Almanya Musikîsi</h1>
@@ -2102,7 +2102,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
     document.addEventListener("DOMContentLoaded", function () {
       const toggleButton = document.querySelector(".toggle");
       const listItems = document.querySelectorAll(".list-item");
@@ -2166,19 +2165,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-        let slideIndex = 0;
-        showSlide(slideIndex);
+      let slideIndex = 0;
+      showSlide(slideIndex);
 
-        function changeSlide(n) {
+      function changeSlide(n) {
             showSlide(slideIndex += n);
-        }
+      }
 
-        function showSlide(n) {
+      function showSlide(n) {
             const images = ["https://dillerinkulturu.files.wordpress.com/2023/01/buchheim-museum-der-phantasie-in-bernried-am.jpg?w=1024", "https://dillerinkulturu.files.wordpress.com/2023/01/csm_luftmuseum_10-2017_0012_1500_6c86cd686f.jpg?w=1024", "https://dillerinkulturu.files.wordpress.com/2023/01/esm-sammlung-edwin-scharff-hockende-foto-niks.jpg?w=1024"];
             const texts = [
                 "Hayatı boyunca yazar, film yapımcısı ve ressam Lothar-Günther Buchheim resim ve eserler topladı. Artık ziyaretçiler koleksiyonunu Starnberg Gölü’nün yanındaki müzede görebilirler. Buchheim Museum der Phantasie-Bernried İlçesi.",
-                "Amberg’deki Engelsburg Kalesi’ndeki Hava Müzesi, toplam 650 metrekarelik üç kata yayılmış, duyabileceğiniz, görebileceğiniz ve dokunabileceğiniz havaya sahiptir.",
-                "Neu-Ulm Edwin Scharff Müzesi, Almanya’daki sanatçının eserlerine ve modern sanatına adanmış sergi salonlarının yanı sıra etkileşimli bir çocuk müzesi içeren eşsiz bir kurumdur.",
+                "Amberg’deki Engelsburg Kalesi’ndeki Hava Müzesi, toplam 650 metrekarelik üç kata yayılmış, duyabileceğiniz, görebileceğiniz ve dokunabileceğiniz havaya sahiptir. Luftmuseum-Amberg İlçesi",
+                "Neu-Ulm Edwin Scharff Müzesi, Almanya’daki sanatçının eserlerine ve modern sanatına adanmış sergi salonlarının yanı sıra etkileşimli bir çocuk müzesi içeren eşsiz bir kurumdur. Edwin Scharff Museum-Neu Ulm İlçesi",
             ];
 
             if (n >= images.length) {
@@ -2194,8 +2193,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             imgElement.src = images[slideIndex];
             textElement.innerText = texts[slideIndex];
-        }
+      }
 </script>
+
 
 <style>
 @media only screen and (min-width: 480px){
@@ -2225,8 +2225,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         .prev, .next {
-            font-size: 42px;
+            font-size: 46px;
             cursor: pointer;
+            color: #09203f;
         }
 
         .prev {
@@ -2236,26 +2237,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .next {
             float: right;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
