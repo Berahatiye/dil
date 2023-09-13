@@ -74,16 +74,161 @@ document.addEventListener("DOMContentLoaded", function () {
       const listItems = document.querySelectorAll(".list-item");
       const originalContent = document.querySelector(".izah");
       const izParagraph = document.querySelector(".iz");
-      const replacementContent =  `<h2>Bayern(Bavyera) Eyaletindeki Müzeler</h2>
-        <div class="slideshow-container">
-        <img class="ress" src="https://dillerinkulturu.files.wordpress.com/2023/01/buchheim-museum-der-phantasie-in-bernried-am.jpg?w=1024" alt="Image 1">
-        <div class="text-container">
-          Hayatı boyunca yazar, film yapımcısı ve ressam Lothar-Günther Buchheim resim ve eserler topladı. Artık ziyaretçiler koleksiyonunu Starnberg Gölü’nün yanındaki müzede görebilirler. Buchheim Museum der Phantasie-Bernried İlçesi.
-        </div>
-        
-        <a class="prev" onclick="changeSlide(-1)">❮</a>
-        <a class="next" onclick="changeSlide(1)">❯</a>
-    </div>`;
+      const replacementContent =  `<div class="center">
+  <div class="carousel-wrapper">
+    <!-- abstract radio buttons for slides -->
+    <input id="slide1" type="radio" name="controls" checked="checked" />
+    <input id="slide2" type="radio" name="controls" />
+    <input id="slide3" type="radio" name="controls" />
+    <input id="slide4" type="radio" name="controls" />
+    <input id="slide5" type="radio" name="controls" />
+
+    <!-- navigation dots -->
+    <label for="slide1" class="nav-dot"></label>
+    <label for="slide2" class="nav-dot"></label>
+    <label for="slide3" class="nav-dot"></label>
+    <label for="slide4" class="nav-dot"></label>
+    <label for="slide5" class="nav-dot"></label>
+
+    <!-- arrows -->
+    <label for="slide1" class="left-arrow"> < </label>
+    <label for="slide2" class="left-arrow"> < </label>
+    <label for="slide3" class="left-arrow"> < </label>
+    <label for="slide4" class="left-arrow"> < </label>
+    <label for="slide5" class="left-arrow"> < </label>
+
+    <label for="slide1" class="right-arrow"> > </label>
+    <label for="slide2" class="right-arrow"> > </label>
+    <label for="slide3" class="right-arrow"> > </label>
+    <label for="slide4" class="right-arrow"> > </label>
+    <label for="slide5" class="right-arrow"> > </label>
+
+    <div class="carousel">
+      <ul>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/canyon.jpg" />
+        </li>
+        <li>
+          <img src="https://m.media-amazon.com/images/I/31Y+R3Y3nvL._SL1000_.jpg" alt="">
+          <p>jsakdlkjahufdlıhsbfgdshbahjasdbhfkshfddsajkfbasfbasufbhsabfhf</p>
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/ministick/main/data/img/main/ministick-clip-3.gif" />
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/smoke.jpg">
+        </li>
+        <li>
+          <img src="https://images.ctfassets.net/9l3tjzgyn9gr/photo-157575/d224d518da6c26515a470a9b7e490df8/157575-honey-bun-baby.jpg?fm=jpg&fl=progressive&q=50&w=1200" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="custom-center">
+  <div class="custom-carousel-wrapper">
+    <!-- abstract radio buttons for slides -->
+    <input id="custom-slide1" type="radio" name="custom-controls" checked="checked" />
+    <input id="custom-slide2" type="radio" name="custom-controls" />
+    <input id="custom-slide3" type="radio" name="custom-controls" />
+    <input id="custom-slide4" type="radio" name="custom-controls" />
+    <input id="custom-slide5" type="radio" name="custom-controls" />
+
+    <!-- navigation dots -->
+    <label for="custom-slide1" class="custom-nav-dot"></label>
+    <label for="custom-slide2" class="custom-nav-dot"></label>
+    <label for="custom-slide3" class="custom-nav-dot"></label>
+    <label for="custom-slide4" class="custom-nav-dot"></label>
+    <label for="custom-slide5" class="custom-nav-dot"></label>
+
+    <!-- arrows -->
+    <label for="custom-slide1" class="custom-left-arrow"> &lt; </label>
+    <label for="custom-slide2" class="custom-left-arrow"> &lt; </label>
+    <label for="custom-slide3" class="custom-left-arrow"> &lt; </label>
+    <label for="custom-slide4" class="custom-left-arrow"> &lt; </label>
+    <label for="custom-slide5" class="custom-left-arrow"> &lt; </label>
+
+    <label for="custom-slide1" class="custom-right-arrow"> &gt; </label>
+    <label for="custom-slide2" class="custom-right-arrow"> &gt; </label>
+    <label for="custom-slide3" class="custom-right-arrow"> &gt; </label>
+    <label for="custom-slide4" class="custom-right-arrow"> &gt; </label>
+    <label for="custom-slide5" class="custom-right-arrow"> &gt; </label>
+
+    <div class="custom-carousel">
+      <ul>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/canyon.jpg" />
+        </li>
+        <li>
+          <img src="https://m.media-amazon.com/images/I/31Y+R3Y3nvL._SL1000_.jpg" alt="">
+          <p>jsakdlkjahufdlıhsbfgdshbahjasdbhfkshfddsajkfbasfbasufbhsabfhf</p>
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/ministick/main/data/img/main/ministick-clip-3.gif" />
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/smoke.jpg">
+        </li>
+        <li>
+          <img src="https://images.ctfassets.net/9l3tjzgyn9gr/photo-157575/d224d518da6c26515a470a9b7e490df8/157575-honey-bun-baby.jpg?fm=jpg&fl=progressive&q=50&w=1200" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="my-center">
+  <div class="my-carousel-wrapper">
+    <!-- abstract radio buttons for slides -->
+    <input id="my-slide1" type="radio" name="my-controls" checked="checked" />
+    <input id="my-slide2" type="radio" name="my-controls" />
+    <input id="my-slide3" type="radio" name="my-controls" />
+    <input id="my-slide4" type="radio" name="my-controls" />
+    <input id="my-slide5" type="radio" name="my-controls" />
+
+    <!-- navigation dots -->
+    <label for="my-slide1" class="my-nav-dot"></label>
+    <label for="my-slide2" class="my-nav-dot"></label>
+    <label for="my-slide3" class="my-nav-dot"></label>
+    <label for="my-slide4" class="my-nav-dot"></label>
+    <label for="my-slide5" class="my-nav-dot"></label>
+
+    <!-- arrows -->
+    <label for="my-slide1" class="my-left-arrow"> &lt; </label>
+    <label for="my-slide2" class="my-left-arrow"> &lt; </label>
+    <label for="my-slide3" class="my-left-arrow"> &lt; </label>
+    <label for="my-slide4" class="my-left-arrow"> &lt; </label>
+    <label for="my-slide5" class="my-left-arrow"> &lt; </label>
+
+    <label for="my-slide1" class="my-right-arrow"> &gt; </label>
+    <label for="my-slide2" class="my-right-arrow"> &gt; </label>
+    <label for="my-slide3" class="my-right-arrow"> &gt; </label>
+    <label for="my-slide4" class="my-right-arrow"> &gt; </label>
+    <label for="my-slide5" class="my-right-arrow"> &gt; </label>
+
+    <div class="my-carousel">
+      <ul>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/canyon.jpg" />
+        </li>
+        <li>
+          <img src="https://m.media-amazon.com/images/I/31Y+R3Y3nvL._SL1000_.jpg" alt="">
+          <p>jsakdlkjahufdlıhsbfgdshbahjasdbhfkshfddsajkfbasfbasufbhsabfhf</p>
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/ministick/main/data/img/main/ministick-clip-3.gif" />
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/smoke.jpg">
+        </li>
+        <li>
+          <img src="https://images.ctfassets.net/9l3tjzgyn9gr/photo-157575/d224d518da6c26515a470a9b7e490df8/157575-honey-bun-baby.jpg?fm=jpg&fl=progressive&q=50&w=1200" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>`;
       let isReplaced = false;
 
       listItems.forEach((item) => {
@@ -2021,16 +2166,161 @@ Mimar Friedrich Schinkel, Berlin’de Klassizmin başyapıtları olarak kabul ed
   </iframe>
 </div>`,    
 
-       kent: `<h2>Bayern(Bavyera) Eyaletindeki Müzeler</h2>
-        <div class="slideshow-container">
-        <img class="ress" src="https://dillerinkulturu.files.wordpress.com/2023/01/buchheim-museum-der-phantasie-in-bernried-am.jpg?w=1024" alt="Image 1">
-        <div class="text-container">
-          Hayatı boyunca yazar, film yapımcısı ve ressam Lothar-Günther Buchheim resim ve eserler topladı. Artık ziyaretçiler koleksiyonunu Starnberg Gölü’nün yanındaki müzede görebilirler. Buchheim Museum der Phantasie-Bernried İlçesi.
-        </div>
-        
-        <a class="prev" onclick="changeSlide(-1)">❮</a>
-        <a class="next" onclick="changeSlide(1)">❯</a>
-    </div>`,
+       kent: `<div class="center">
+  <div class="carousel-wrapper">
+    <!-- abstract radio buttons for slides -->
+    <input id="slide1" type="radio" name="controls" checked="checked" />
+    <input id="slide2" type="radio" name="controls" />
+    <input id="slide3" type="radio" name="controls" />
+    <input id="slide4" type="radio" name="controls" />
+    <input id="slide5" type="radio" name="controls" />
+
+    <!-- navigation dots -->
+    <label for="slide1" class="nav-dot"></label>
+    <label for="slide2" class="nav-dot"></label>
+    <label for="slide3" class="nav-dot"></label>
+    <label for="slide4" class="nav-dot"></label>
+    <label for="slide5" class="nav-dot"></label>
+
+    <!-- arrows -->
+    <label for="slide1" class="left-arrow"> < </label>
+    <label for="slide2" class="left-arrow"> < </label>
+    <label for="slide3" class="left-arrow"> < </label>
+    <label for="slide4" class="left-arrow"> < </label>
+    <label for="slide5" class="left-arrow"> < </label>
+
+    <label for="slide1" class="right-arrow"> > </label>
+    <label for="slide2" class="right-arrow"> > </label>
+    <label for="slide3" class="right-arrow"> > </label>
+    <label for="slide4" class="right-arrow"> > </label>
+    <label for="slide5" class="right-arrow"> > </label>
+
+    <div class="carousel">
+      <ul>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/canyon.jpg" />
+        </li>
+        <li>
+          <img src="https://m.media-amazon.com/images/I/31Y+R3Y3nvL._SL1000_.jpg" alt="">
+          <p>jsakdlkjahufdlıhsbfgdshbahjasdbhfkshfddsajkfbasfbasufbhsabfhf</p>
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/ministick/main/data/img/main/ministick-clip-3.gif" />
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/smoke.jpg">
+        </li>
+        <li>
+          <img src="https://images.ctfassets.net/9l3tjzgyn9gr/photo-157575/d224d518da6c26515a470a9b7e490df8/157575-honey-bun-baby.jpg?fm=jpg&fl=progressive&q=50&w=1200" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="custom-center">
+  <div class="custom-carousel-wrapper">
+    <!-- abstract radio buttons for slides -->
+    <input id="custom-slide1" type="radio" name="custom-controls" checked="checked" />
+    <input id="custom-slide2" type="radio" name="custom-controls" />
+    <input id="custom-slide3" type="radio" name="custom-controls" />
+    <input id="custom-slide4" type="radio" name="custom-controls" />
+    <input id="custom-slide5" type="radio" name="custom-controls" />
+
+    <!-- navigation dots -->
+    <label for="custom-slide1" class="custom-nav-dot"></label>
+    <label for="custom-slide2" class="custom-nav-dot"></label>
+    <label for="custom-slide3" class="custom-nav-dot"></label>
+    <label for="custom-slide4" class="custom-nav-dot"></label>
+    <label for="custom-slide5" class="custom-nav-dot"></label>
+
+    <!-- arrows -->
+    <label for="custom-slide1" class="custom-left-arrow"> &lt; </label>
+    <label for="custom-slide2" class="custom-left-arrow"> &lt; </label>
+    <label for="custom-slide3" class="custom-left-arrow"> &lt; </label>
+    <label for="custom-slide4" class="custom-left-arrow"> &lt; </label>
+    <label for="custom-slide5" class="custom-left-arrow"> &lt; </label>
+
+    <label for="custom-slide1" class="custom-right-arrow"> &gt; </label>
+    <label for="custom-slide2" class="custom-right-arrow"> &gt; </label>
+    <label for="custom-slide3" class="custom-right-arrow"> &gt; </label>
+    <label for="custom-slide4" class="custom-right-arrow"> &gt; </label>
+    <label for="custom-slide5" class="custom-right-arrow"> &gt; </label>
+
+    <div class="custom-carousel">
+      <ul>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/canyon.jpg" />
+        </li>
+        <li>
+          <img src="https://m.media-amazon.com/images/I/31Y+R3Y3nvL._SL1000_.jpg" alt="">
+          <p>jsakdlkjahufdlıhsbfgdshbahjasdbhfkshfddsajkfbasfbasufbhsabfhf</p>
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/ministick/main/data/img/main/ministick-clip-3.gif" />
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/smoke.jpg">
+        </li>
+        <li>
+          <img src="https://images.ctfassets.net/9l3tjzgyn9gr/photo-157575/d224d518da6c26515a470a9b7e490df8/157575-honey-bun-baby.jpg?fm=jpg&fl=progressive&q=50&w=1200" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="my-center">
+  <div class="my-carousel-wrapper">
+    <!-- abstract radio buttons for slides -->
+    <input id="my-slide1" type="radio" name="my-controls" checked="checked" />
+    <input id="my-slide2" type="radio" name="my-controls" />
+    <input id="my-slide3" type="radio" name="my-controls" />
+    <input id="my-slide4" type="radio" name="my-controls" />
+    <input id="my-slide5" type="radio" name="my-controls" />
+
+    <!-- navigation dots -->
+    <label for="my-slide1" class="my-nav-dot"></label>
+    <label for="my-slide2" class="my-nav-dot"></label>
+    <label for="my-slide3" class="my-nav-dot"></label>
+    <label for="my-slide4" class="my-nav-dot"></label>
+    <label for="my-slide5" class="my-nav-dot"></label>
+
+    <!-- arrows -->
+    <label for="my-slide1" class="my-left-arrow"> &lt; </label>
+    <label for="my-slide2" class="my-left-arrow"> &lt; </label>
+    <label for="my-slide3" class="my-left-arrow"> &lt; </label>
+    <label for="my-slide4" class="my-left-arrow"> &lt; </label>
+    <label for="my-slide5" class="my-left-arrow"> &lt; </label>
+
+    <label for="my-slide1" class="my-right-arrow"> &gt; </label>
+    <label for="my-slide2" class="my-right-arrow"> &gt; </label>
+    <label for="my-slide3" class="my-right-arrow"> &gt; </label>
+    <label for="my-slide4" class="my-right-arrow"> &gt; </label>
+    <label for="my-slide5" class="my-right-arrow"> &gt; </label>
+
+    <div class="my-carousel">
+      <ul>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/canyon.jpg" />
+        </li>
+        <li>
+          <img src="https://m.media-amazon.com/images/I/31Y+R3Y3nvL._SL1000_.jpg" alt="">
+          <p>jsakdlkjahufdlıhsbfgdshbahjasdbhfkshfddsajkfbasfbasufbhsabfhf</p>
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/ministick/main/data/img/main/ministick-clip-3.gif" />
+        </li>
+        <li>
+          <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/smoke.jpg">
+        </li>
+        <li>
+          <img src="https://images.ctfassets.net/9l3tjzgyn9gr/photo-157575/d224d518da6c26515a470a9b7e490df8/157575-honey-bun-baby.jpg?fm=jpg&fl=progressive&q=50&w=1200" alt="">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>`,
         
       };
       
@@ -2164,80 +2454,540 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+        
 
-      let slideIndex = 0;
-      showSlide(slideIndex);
-
-      function changeSlide(n) {
-            showSlide(slideIndex += n);
-      }
-
-      function showSlide(n) {
-            const images = ["https://dillerinkulturu.files.wordpress.com/2023/01/buchheim-museum-der-phantasie-in-bernried-am.jpg?w=1024", "https://dillerinkulturu.files.wordpress.com/2023/01/csm_luftmuseum_10-2017_0012_1500_6c86cd686f.jpg?w=1024", "https://dillerinkulturu.files.wordpress.com/2023/01/esm-sammlung-edwin-scharff-hockende-foto-niks.jpg?w=1024"];
-            const texts = [
-                "Hayatı boyunca yazar, film yapımcısı ve ressam Lothar-Günther Buchheim resim ve eserler topladı. Artık ziyaretçiler koleksiyonunu Starnberg Gölü’nün yanındaki müzede görebilirler. Buchheim Museum der Phantasie-Bernried İlçesi.",
-                "Amberg’deki Engelsburg Kalesi’ndeki Hava Müzesi, toplam 650 metrekarelik üç kata yayılmış, duyabileceğiniz, görebileceğiniz ve dokunabileceğiniz havaya sahiptir. Luftmuseum-Amberg İlçesi",
-                "Neu-Ulm Edwin Scharff Müzesi, Almanya’daki sanatçının eserlerine ve modern sanatına adanmış sergi salonlarının yanı sıra etkileşimli bir çocuk müzesi içeren eşsiz bir kurumdur. Edwin Scharff Museum-Neu Ulm İlçesi",
-            ];
-
-            if (n >= images.length) {
-                slideIndex = 0;
-            }
-
-            if (n < 0) {
-                slideIndex = images.length - 1;
-            }
-
-            const imgElement = document.querySelector('.slideshow-container img');
-            const textElement = document.querySelector('.text-container');
-
-            imgElement.src = images[slideIndex];
-            textElement.innerText = texts[slideIndex];
-      }
 </script>
 
 
+
+
 <style>
+
+
 @media only screen and (min-width: 480px){
 
-  .slideshow-container {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+.line, .carousel, .carousel li, .carousel li img {
+  width: 100%;
+}
+.flex, .center, .carousel ul, .carousel-wrapper {
+  display: flex;
+}
+.center, .carousel ul {
+  align-items: center;
+  justify-content: center;
+}
+.carousel-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 50px;
+}
+.carousel-wrapper input {
+  display: none;
+}
+.carousel {
+  overflow: hidden;
+  border-radius: 15px;
+}
+.carousel ul {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 500%;
+  transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.carousel li img {
+  border-radius: 15px;
+}
+.nav-dot {
+  position: absolute;
+  cursor: pointer;
+  margin-left: -7.5px;
+  bottom: -22.5px;
+  width: 15px;
+  height: 15px;
+  opacity: 0.5;
+  background-color: rgb(194, 46, 46);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.nav-dot:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+.nav-dot:active {
+  transform: scale(0.9);
+}
+.nav-dot[for=slide1] {
+  left: 40%;
+}
+#slide1:checked ~ .carousel ul {
+  left: 0%;
+}
+#slide1:checked ~ .nav-dot[for=slide1] {
+  opacity: 1;
+}
+.nav-dot[for=slide2] {
+  left: 45%;
+}
+#slide2:checked ~ .carousel ul {
+  left: -100%;
+}
+#slide2:checked ~ .nav-dot[for=slide2] {
+  opacity: 1;
+}
+.nav-dot[for=slide3] {
+  left: 50%;
+}
+#slide3:checked ~ .carousel ul {
+  left: -200%;
+}
+#slide3:checked ~ .nav-dot[for=slide3] {
+  opacity: 1;
+}
+.nav-dot[for=slide4] {
+  left: 55%;
+}
+#slide4:checked ~ .carousel ul {
+  left: -300%;
+}
+#slide4:checked ~ .nav-dot[for=slide4] {
+  opacity: 1;
+}
+.nav-dot[for=slide5] {
+  left: 60%;
+}
+#slide5:checked ~ .carousel ul {
+  left: -400%;
+}
+#slide5:checked ~ .nav-dot[for=slide5] {
+  opacity: 1;
+}
+.left-arrow, .right-arrow {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  font-weight: bolder;
+  text-shadow: 0 0 7.5px rgba(255, 255, 255, 0.7);
+  top: 50%;
+  z-index: 1;
+  opacity: 0.7;
+  margin-top: -45px;
+  height: 85px;
+  font-size: 85px;
+  transition: 0.2s;
+}
+.left-arrow:hover, .right-arrow:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.left-arrow:active, .right-arrow:active {
+  transform: scale(0.9);
+}
+.left-arrow {
+  left: 15px;
+  border-radius: 5px;
+}
+.right-arrow {
+  right: 15px;
+  border-radius: 5px;
+}
+#slide1:checked ~ .left-arrow[for=slide5], #slide1:checked ~ .right-arrow[for=slide2] {
+  display: block;
+}
+#slide2:checked ~ .left-arrow[for=slide1], #slide2:checked ~ .right-arrow[for=slide3] {
+  display: block;
+}
+#slide3:checked ~ .left-arrow[for=slide2], #slide3:checked ~ .right-arrow[for=slide4] {
+  display: block;
+}
+#slide4:checked ~ .left-arrow[for=slide3], #slide4:checked ~ .right-arrow[for=slide5] {
+  display: block;
+}
+#slide5:checked ~ .left-arrow[for=slide4], #slide5:checked ~ .right-arrow[for=slide1] {
+  display: block;
+}
 
-        .ress {
-            max-width: 50%;
-            border-radius: 20px;
-        }
 
-        .text-container {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.4);
-            color: #fff;
-            padding: 8px;
-            max-height: 100px; /* Set the maximum height for the scrollable text container */
-            overflow-y: auto; /* Enable vertical scroll if text exceeds the container height */
-            border-radius: 10px;
-        }
 
-        .prev, .next {
-            font-size: 46px;
-            cursor: pointer;
-            color: #09203f;
-        }
 
-        .prev {
-            float: left;
-        }
 
-        .next {
-            float: right;
-        }
 
+.custom-carousel, .custom-carousel li, .custom-carousel li img {
+  width: 100%;
+}
+
+.custom-flex, .custom-center, .custom-carousel ul, .custom-carousel-wrapper {
+  display: flex;
+}
+
+.custom-center, .custom-carousel ul {
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-carousel-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 50px;
+}
+
+.custom-carousel-wrapper input {
+  display: none;
+}
+
+.custom-carousel {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.custom-carousel ul {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 500%;
+  transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.custom-carousel li img {
+  border-radius: 15px;
+}
+
+.custom-nav-dot {
+  position: absolute;
+  cursor: pointer;
+  margin-left: -7.5px;
+  bottom: -22.5px;
+  width: 15px;
+  height: 15px;
+  opacity: 0.5;
+  background-color: rgb(194, 46, 46);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.custom-nav-dot:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+
+.custom-nav-dot:active {
+  transform: scale(0.9);
+}
+
+.custom-nav-dot[for=custom-slide1] {
+  left: 40%;
+}
+
+#custom-slide1:checked ~ .custom-carousel ul {
+  left: 0%;
+}
+
+#custom-slide1:checked ~ .custom-nav-dot[for=custom-slide1] {
+  opacity: 1;
+}
+
+.custom-nav-dot[for=custom-slide2] {
+  left: 45%;
+}
+
+#custom-slide2:checked ~ .custom-carousel ul {
+  left: -100%;
+}
+
+#custom-slide2:checked ~ .custom-nav-dot[for=custom-slide2] {
+  opacity: 1;
+}
+
+.custom-nav-dot[for=custom-slide3] {
+  left: 50%;
+}
+
+#custom-slide3:checked ~ .custom-carousel ul {
+  left: -200%;
+}
+
+#custom-slide3:checked ~ .custom-nav-dot[for=custom-slide3] {
+  opacity: 1;
+}
+
+.custom-nav-dot[for=custom-slide4] {
+  left: 55%;
+}
+
+#custom-slide4:checked ~ .custom-carousel ul {
+  left: -300%;
+}
+
+#custom-slide4:checked ~ .custom-nav-dot[for=custom-slide4] {
+  opacity: 1;
+}
+
+.custom-nav-dot[for=custom-slide5] {
+  left: 60%;
+}
+
+#custom-slide5:checked ~ .custom-carousel ul {
+  left: -400%;
+}
+
+#custom-slide5:checked ~ .custom-nav-dot[for=custom-slide5] {
+  opacity: 1;
+}
+
+.custom-left-arrow, .custom-right-arrow {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  font-weight: bolder;
+  text-shadow: 0 0 7.5px rgba(255, 255, 255, 0.7);
+  top: 50%;
+  z-index: 1;
+  opacity: 0.7;
+  margin-top: -45px;
+  height: 85px;
+  font-size: 85px;
+  transition: 0.2s;
+}
+
+.custom-left-arrow:hover, .custom-right-arrow:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.custom-left-arrow:active, .custom-right-arrow:active {
+  transform: scale(0.9);
+}
+
+.custom-left-arrow {
+  left: 15px;
+  border-radius: 5px;
+}
+
+.custom-right-arrow {
+  right: 15px;
+  border-radius: 5px;
+}
+
+#custom-slide1:checked ~ .custom-left-arrow[for=custom-slide5],
+#custom-slide1:checked ~ .custom-right-arrow[for=custom-slide2] {
+  display: block;
+}
+
+#custom-slide2:checked ~ .custom-left-arrow[for=custom-slide1],
+#custom-slide2:checked ~ .custom-right-arrow[for=custom-slide3] {
+  display: block;
+}
+
+#custom-slide3:checked ~ .custom-left-arrow[for=custom-slide2],
+#custom-slide3:checked ~ .custom-right-arrow[for=custom-slide4] {
+  display: block;
+}
+
+#custom-slide4:checked ~ .custom-left-arrow[for=custom-slide3],
+#custom-slide4:checked ~ .custom-right-arrow[for=custom-slide5] {
+  display: block;
+}
+
+#custom-slide5:checked ~ .custom-left-arrow[for=custom-slide4],
+#custom-slide5:checked ~ .custom-right-arrow[for=custom-slide1] {
+  display: block;
+}
+
+
+
+
+
+
+
+.my-center, .my-carousel li, .my-carousel li img {
+  width: 100%;
+}
+
+.my-flex, .my-center, .my-carousel ul, .my-carousel-wrapper {
+  display: flex;
+}
+
+.my-center, .my-carousel ul {
+  align-items: center;
+  justify-content: center;
+}
+
+.my-carousel-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 50px;
+}
+
+.my-carousel-wrapper input {
+  display: none;
+}
+
+.my-carousel {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.my-carousel ul {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 500%;
+  transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.my-carousel li img {
+  border-radius: 15px;
+}
+
+.my-nav-dot {
+  position: absolute;
+  cursor: pointer;
+  margin-left: -7.5px;
+  bottom: -22.5px;
+  width: 15px;
+  height: 15px;
+  opacity: 0.5;
+  background-color: rgb(194, 46, 46);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.my-nav-dot:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+
+.my-nav-dot:active {
+  transform: scale(0.9);
+}
+
+.my-nav-dot[for=my-slide1] {
+  left: 40%;
+}
+
+#my-slide1:checked ~ .my-carousel ul {
+  left: 0%;
+}
+
+#my-slide1:checked ~ .my-nav-dot[for=my-slide1] {
+  opacity: 1;
+}
+
+.my-nav-dot[for=my-slide2] {
+  left: 45%;
+}
+
+#my-slide2:checked ~ .my-carousel ul {
+  left: -100%;
+}
+
+#my-slide2:checked ~ .my-nav-dot[for=my-slide2] {
+  opacity: 1;
+}
+
+.my-nav-dot[for=my-slide3] {
+  left: 50%;
+}
+
+#my-slide3:checked ~ .my-carousel ul {
+  left: -200%;
+}
+
+#my-slide3:checked ~ .my-nav-dot[for=my-slide3] {
+  opacity: 1;
+}
+
+.my-nav-dot[for=my-slide4] {
+  left: 55%;
+}
+
+#my-slide4:checked ~ .my-carousel ul {
+  left: -300%;
+}
+
+#my-slide4:checked ~ .my-nav-dot[for=my-slide4] {
+  opacity: 1;
+}
+
+.my-nav-dot[for=my-slide5] {
+  left: 60%;
+}
+
+#my-slide5:checked ~ .my-carousel ul {
+  left: -400%;
+}
+
+#my-slide5:checked ~ .my-nav-dot[for=my-slide5] {
+  opacity: 1;
+}
+
+.my-left-arrow, .my-right-arrow {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  font-weight: bolder;
+  text-shadow: 0 0 7.5px rgba(255, 255, 255, 0.7);
+  top: 50%;
+  z-index: 1;
+  opacity: 0.7;
+  margin-top: -45px;
+  height: 85px;
+  font-size: 85px;
+  transition: 0.2s;
+}
+
+.my-left-arrow:hover, .my-right-arrow:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.my-left-arrow:active, .my-right-arrow:active {
+  transform: scale(0.9);
+}
+
+.my-left-arrow {
+  left: 15px;
+  border-radius: 5px;
+}
+
+.my-right-arrow {
+  right: 15px;
+  border-radius: 5px;
+}
+
+#my-slide1:checked ~ .my-left-arrow[for=my-slide5],
+#my-slide1:checked ~ .my-right-arrow[for=my-slide2] {
+  display: block;
+}
+
+#my-slide2:checked ~ .my-left-arrow[for=my-slide1],
+#my-slide2:checked ~ .my-right-arrow[for=my-slide3] {
+  display: block;
+}
+
+#my-slide3:checked ~ .my-left-arrow[for=my-slide2],
+#my-slide3:checked ~ .my-right-arrow[for=my-slide4] {
+  display: block;
+}
+
+#my-slide4:checked ~ .my-left-arrow[for=my-slide3],
+#my-slide4:checked ~ .my-right-arrow[for=my-slide5] {
+  display: block;
+}
+
+#my-slide5:checked ~ .my-left-arrow[for=my-slide4],
+#my-slide5:checked ~ .my-right-arrow[for=my-slide1] {
+  display: block;
+}
 
 
 
