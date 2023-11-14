@@ -6478,10 +6478,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   .kalmipp{
+    aspect-ratio: 16 / 9;
     width: 100%;
     border-radius: 20px;
     -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000;
-    height: 190px;
     margin-top: 25px;
   }
 
@@ -6617,6 +6617,7 @@ document.addEventListener("DOMContentLoaded", function () {
   border-radius: 30px;
   cursor: pointer;
   font-size: 1.7rem;
+  margin-inline: auto;
 }
 
 .toggle-label::after {
@@ -6659,7 +6660,7 @@ document.addEventListener("DOMContentLoaded", function () {
   font-size: 18.5px;
 }
 
-.list-item:hover {
+.list-item:active {
   background-color: dodgerblue;
   color: #fff;
   border-radius: 20px;
@@ -9054,14 +9055,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-@media only screen and (min-width: 481px) and (max-width: 768px)  {
+@media only screen and (min-width: 480px)  {
    
   .kalmipp{
-          width: 70%;
+          aspect-ratio: 16 / 9;
+          width: 65%;
           border-radius: 20px;
           -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000;
           margin-top: 25px;
-          height: 240px;
         }
 
         .sr{
@@ -9077,55 +9078,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 }
 
-
-@media only screen and (min-width: 769px) and (max-width: 1024px)  {
-
-  .kalmipp{
-          width: 60%;
-          border-radius: 20px;
-          -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000;
-          margin-top: 25px;
-          height: 260px;
-  }
-
-
-  .sr{
-            font-family: 'Parisienne', cursive;;
-            font-size: 2.6rem;
-            font-weight: 500;
-            text-align: center;
-            top: 0;
-            background: -webkit-linear-gradient(#ffffff, #acabab);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-  }
-
-}
-
-
-@media only screen and (min-width: 1025px) and (max-width: 1200px){
-
-  .kalmipp{
-          width: 60%;
-          border-radius: 20px;
-          -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000;
-          margin-top: 25px;
-          height: 315px;
-  }
-
-}
-
-@media only screen and (min-width: 1201px){
-
-  .kalmipp{
-          width: 50%;
-          border-radius: 20px;
-          -webkit-box-shadow: 0px 0px 10px 5px #000000; -moz-box-shadow: 0px 0px 10px 5px #000000; box-shadow: 0px 0px 10px 5px #000000;
-          margin-top: 25px;
-          height: 315px;
-  }
-
-}
 
 </style>
     
