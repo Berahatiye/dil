@@ -1062,20 +1062,19 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-// script.js
-// script.js
+
 document.addEventListener('DOMContentLoaded', function() {
   
   const loadingContainer = document.querySelector('.loading-container');
-  let hasScrolled = false; // Flag to track if scroll has occurred
-  let isScrolling = false; // Flag to track if currently scrolling
+  let hasScrolled = false; 
+  let isScrolling = false; 
 
   scrollButton.addEventListener('click', function() {
     if (!hasScrolled && !isScrolling) {
       isScrolling = true;
-      loadingContainer.style.display = 'block'; // Show loading animation
+      loadingContainer.style.display = 'block'; 
       setTimeout(() => {
-        loadingContainer.style.display = 'none'; // Hide loading animation after 3 seconds
+        loadingContainer.style.display = 'none'; 
         smoothScroll(200);
         hasScrolled = true;
       }, 400);
@@ -1088,7 +1087,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function smoothScroll(distance) {
     const startPosition = window.pageYOffset;
     const targetPosition = startPosition + distance;
-    const duration = 500; // Duration of the scroll animation in milliseconds
+    const duration = 500; 
     const startTime = performance.now();
 
     function scrollStep(timestamp) {
@@ -1100,8 +1099,8 @@ document.addEventListener('DOMContentLoaded', function() {
       if (currentTime < duration) {
         requestAnimationFrame(scrollStep);
       } else {
-        isScrolling = false; // Animation finished, re-enable the button
-        scrollButton.classList.remove('loading'); // Remove loading animation class
+        isScrolling = false; 
+        scrollButton.classList.remove('loading'); 
       }
     }
 
@@ -1118,7 +1117,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   listItems.forEach((item) => {
     item.addEventListener("click", () => {
-      toggleCheckbox.checked = false; // Uncheck the checkbox to close the list
+      toggleCheckbox.checked = false; 
     });
   });
 });
@@ -3860,7 +3859,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
 
-        // Load images when the page is fully loaded
         window.addEventListener("load", () => {
             appendLazyImages(imagesToLoad);
         });
