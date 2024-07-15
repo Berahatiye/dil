@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dilleri Kültürü ile Tanımak: Harmanlanmış Öğrenme ile Yabancı Dil Olarak Almanca Örneği</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
@@ -12,6 +12,11 @@
     <header>
       <p class="sr">Almanya Kültürünün Envaiçeşit İşlevleri ile Mahdut Bir Şerhi</p>
     </header> 
+
+    <input type="checkbox" id="dark-mode" class="darkinput">
+    <label for="dark-mode" class="darklabel">
+        <div class="circle"></div>
+    </label>
 
     <div class="container">
       <div class="menu">
@@ -53,11 +58,57 @@
        <p class="izah">Asıl amacı "TÜBİTAK; 54. Liselerarası Proje Yarışması" adlı etkinliğe katılmak olan ve "Dilleri Kültürü ile Tanımak: Harmanlanmış Öğrenme ile Yabancı Dil Olarak Almanca Örneği" adlı proje altında hazırlanmış bu çalışma, tümüyle Berat Can TURSUN'un bireysel çalışmasıdır. Tüm konular 'Kültürün İşlevleri'nde sıralanır vaziyettedir ve ilgili konunun içerikleri burada görünür.</p>
 
 
-        <p class="bottom"><a style="text-decoration: none; color: #f5f5f7;" href="https://www.facebook.com/profile.php?id=100093580601707&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">© Berat Can TURSUN | 2022-2023</a></p>
+        <p class="bottom"><a style="text-decoration: none; color: #f5f5f7;" href="https://www.facebook.com/profile.php?id=100093580601707&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">© Berat Can TURSUN | 2022-2023 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 18 18">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+        </svg></a></p>
 
 
 
 <script>
+
+const input = document.querySelector(".darkinput");
+const body = document.querySelector(".izah");
+const html = document.querySelector("html");
+const toggle = document.querySelector(".toggle-label");
+const list = document.querySelector(".list");
+const listitem = document.querySelector(".list-item");
+
+const storedMode = JSON.parse(localStorage.getItem("mode"));
+if (storedMode !== null) {
+  input.checked = storedMode;
+  theme();
+} else {
+ 
+  input.checked = false;
+}
+
+function theme() {
+  if (input.checked) {
+    body.style.background = "#1c1c1e";
+    body.style.color = "#f5f5f7"; 
+    html.style.background = "#000000"
+    toggle.style.background = "#1c1c1e";
+    toggle.style.color = "#f5f5f7";
+    list.style.backgroundImage = "linear-gradient(to right, #28282B 0%, #1c1c1e 80%)";
+  } else {
+    body.style.background = "#f5f5f7";
+    body.style.color = "#000000";
+    html.style.background = "#496a83"
+    toggle.style.background = "#f5f5f7";
+    toggle.style.color = "#000000";
+    list.style.backgroundImage = "linear-gradient(to right, #5b6467 0%, #8b939a 75%)";
+  }
+}
+
+input.addEventListener("input", () => {
+  theme();
+  updateLocalStorage();
+});
+
+function updateLocalStorage() {
+  localStorage.setItem("mode", JSON.stringify(input.checked));
+}
+
 
 
 window.onload = function() {
@@ -3878,6 +3929,60 @@ document.addEventListener("DOMContentLoaded", function () {
 @media only screen and (min-width: 480px){
 
 
+  .darkinput{
+    visibility: hidden;
+
+}
+.darklabel{
+    display: flex;
+    width: 80px;
+    height: 36px;
+    background: #C0C0C0;
+    border-radius: 20px;
+    align-items: center;
+    margin-inline: auto;
+}
+.circle{
+    width: 34px;
+    background: white;
+    height: 34px;
+    border-radius: 50%;
+    top: 3px;
+    display: flex;
+    left: 3px;
+    animation: toggleOff 0.15s ease forwards;
+    cursor: pointer;
+}
+
+.darkinput:checked + .darklabel{
+    background-color: #496a83;
+
+}
+.darkinput:checked + label .circle{
+    animation: toggleOn 0.15s ease forwards;
+    background-color: black;
+    cursor: pointer;
+
+}
+@keyframes toggleOn {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(45.8px);
+    }
+}
+
+@keyframes toggleOff {
+    0%{
+        transform: translate(40px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+  
+
 .hayvankel{
   width: 45%;
   border-radius: 25px;
@@ -6269,6 +6374,7 @@ document.addEventListener("DOMContentLoaded", function () {
             background: -webkit-linear-gradient(#ffffff, #acabab);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            transition: 0.5s;
   }
 
   .iz{
@@ -6298,6 +6404,7 @@ document.addEventListener("DOMContentLoaded", function () {
     -webkit-box-shadow: 0px 0px 10px 5px #000000;
     -moz-box-shadow: 0px 0px 10px 5px #000000;    
     box-shadow: 0px 0px 25px 5px #000000;
+    transition: 0.5s;
   }
 
 
@@ -6333,6 +6440,7 @@ document.addEventListener("DOMContentLoaded", function () {
   border-radius: 30px;
   cursor: pointer;
   font-size: 1.7rem;
+  transition: 0.5s;
 }
 
 .toggle-label::after {
@@ -6412,6 +6520,7 @@ document.addEventListener("DOMContentLoaded", function () {
           user-select: none;
           -moz-user-select: none;
           background-repeat: no-repeat;
+          transition: 0.5s;
         }
 
 
@@ -6438,6 +6547,61 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 @media only screen and (max-width: 480px){
+
+  .darkinput{
+    visibility: hidden;
+
+}
+.darklabel{
+    display: flex;
+    width: 80px;
+    height: 36px;
+    background: #C0C0C0;
+    border-radius: 20px;
+    align-items: center;
+    margin-inline: auto;
+}
+.circle{
+    width: 34px;
+    background: white;
+    height: 34px;
+    border-radius: 50%;
+    top: 3px;
+    display: flex;
+    left: 3px;
+    animation: toggleOff 0.15s ease forwards;
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
+    border: none;
+}
+
+.darkinput:checked + .darklabel{
+    background-color: #496a83;
+
+}
+.darkinput:checked + label .circle{
+    animation: toggleOn 0.15s ease forwards;
+    background-color: black;
+    cursor: pointer;
+
+}
+@keyframes toggleOn {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(46.7px);
+    }
+}
+
+@keyframes toggleOff {
+    0%{
+        transform: translate(40px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
 
 
   .kalmip{
@@ -6509,6 +6673,7 @@ document.addEventListener("DOMContentLoaded", function () {
             background: -webkit-linear-gradient(#ffffff, #acabab);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            transition: 0.5s;
   }
 
   .iz{
@@ -6538,6 +6703,7 @@ document.addEventListener("DOMContentLoaded", function () {
     -webkit-box-shadow: 0px 0px 15px 1px #000000;
     -moz-box-shadow: 0px 0px 15px 1px #000000;    
     box-shadow: 0px 0px 15px 1px #000000;
+    transition: 0.5s;
   }
 
 
@@ -6577,6 +6743,7 @@ document.addEventListener("DOMContentLoaded", function () {
   -webkit-tap-highlight-color: transparent !important;
   outline: none !important;
   border: none;
+  transition: 0.5s;
 }
 
 .toggle-label::after {
@@ -6660,6 +6827,7 @@ a {
           -webkit-user-select: none;
           user-select: none;
           -moz-user-select: none;
+          transition: 0.5s;
         }
 
 
@@ -9022,6 +9190,7 @@ a {
             background: -webkit-linear-gradient(#ffffff, #acabab);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            transition: 0.5s;
   }
 
 }
