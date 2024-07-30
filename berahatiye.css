@@ -2533,7 +2533,6 @@
 .list {
   background-color: #5b6467;
   background-image: linear-gradient(to right, #5b6467 0%, #8b939a 75%);
-  color: #000000;
   list-style: none;
   display: inherit;
   grid-template-rows: repeat(39, 45px);
@@ -2557,6 +2556,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  color: #f5f5f7;
 }
 
 .list-item:hover {
@@ -2866,6 +2866,7 @@ a {
   outline: none !important;
   border: none;
   background-color: transparent;
+  color: #f5f5f7;
 }
 
 .list-item:active {
