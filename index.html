@@ -12,6 +12,9 @@
 </head>
 
 <body>
+
+    <div class="loaderr" id="loaderr"></div>
+
     <header>
       <p class="sr">Kültür Araştırmaları Nasıl Yapılır?</p>
     </header> 
@@ -74,6 +77,29 @@
 
 
 @media only screen and (min-width: 480px){
+
+
+  .loaderr {
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            width: 15px;
+            height: 15px;
+            border: 2px solid #3498db; /* Light grey */
+            border-top: 2px solid transparent; /* Blue */
+            border-radius: 50%;
+            animation: spin 0.5s linear infinite;
+            opacity: 0; /* Start hidden */
+            transition: opacity 0.5s ease; /* Smooth transition */
+            pointer-events: none; /* Prevent interaction */
+        }
+
+
+
+
+
+
+
 
 .darkinput{
   visibility: hidden;
@@ -2694,6 +2720,23 @@ transform: translateX(0);
 
 
 @media only screen and (max-width: 480px){
+
+  .loaderr {
+            position: fixed;
+            top: 2px;
+            right: 2px;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #3498db; /* Light grey */
+            border-top: 1px solid transparent; /* Blue */
+            border-radius: 50%;
+            animation: spin 0.5s linear infinite;
+            opacity: 0; /* Start hidden */
+            transition: opacity 0.5s ease; /* Smooth transition */
+            pointer-events: none; /* Prevent interaction */
+        }
+
+
 
 .darkinput{
   visibility: hidden;

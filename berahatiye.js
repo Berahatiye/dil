@@ -1063,7 +1063,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  
 
 
   function smoothScroll(distance) {
@@ -3846,4 +3845,50 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 
-
+        const imagess = document.getElementsByClassName('kalmip');
+        const loadingAnimation = document.getElementById('loaderr');
+        const youtubeVideo = document.getElementsByClassName('kalmipp');
+        
+        // Show loading animation
+        loadingAnimation.style.opacity = '1'; // Fade in
+        
+        let loadedImagesCount = 0;
+        const totalImages = imagess.length;
+        const totalItems = totalImages + 1; // +1 for the YouTube video
+        
+        // Function to check if all items are loaded
+        function checkAllLoaded() {
+            if (loadedImagesCount === totalItems) {
+                loadingAnimation.style.opacity = '0'; // Fade out
+                setTimeout(() => {
+                    loadingAnimation.style.display = 'none'; // Hide after fade out
+                }, 300); // Match the timeout with the transition duration
+            }
+        }
+        
+        // Load images
+        Array.from(imagess).forEach((img) => {
+            img.onload = () => {
+                loadedImagesCount++;
+                checkAllLoaded();
+            };
+        
+            img.onerror = () => {
+                loadedImagesCount++;
+                checkAllLoaded(); // Count failed loads as complete
+            };
+        });
+        
+        // Load YouTube video
+        Array.from(youtubeVideo).forEach((video) => {
+            // If using an iframe, consider using the YouTube IFrame API
+            video.onloadeddata = () => {
+                loadedImagesCount++;
+                checkAllLoaded();
+            };
+        
+            video.onerror = () => {
+                loadedImagesCount++;
+                checkAllLoaded(); // Count failed loads as complete
+            };
+        });
