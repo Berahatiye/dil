@@ -3845,50 +3845,76 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 
-        const imagess = document.getElementsByClassName('kalmip');
-        const loadingAnimation = document.getElementById('loaderr');
-        const youtubeVideo = document.getElementsByClassName('kalmipp');
-        
-        // Show loading animation
+
+
+const loadingAnimation = document.getElementById('loaderr');
+const imagess = document.getElementsByClassName('kalmip');
+const youtubeVideo = document.getElementsByClassName('kalmipp');
+
+// Function to show loading animation
+function showLoadingAnimation() {
+    loadingAnimation.style.display = 'block'; // Make it visible
+    setTimeout(() => {
         loadingAnimation.style.opacity = '1'; // Fade in
-        
-        let loadedImagesCount = 0;
-        const totalImages = imagess.length;
-        const totalItems = totalImages + 1; // +1 for the YouTube video
-        
-        // Function to check if all items are loaded
-        function checkAllLoaded() {
-            if (loadedImagesCount === totalItems) {
-                loadingAnimation.style.opacity = '0'; // Fade out
-                setTimeout(() => {
-                    loadingAnimation.style.display = 'none'; // Hide after fade out
-                }, 300); // Match the timeout with the transition duration
-            }
-        }
-        
-        // Load images
-        Array.from(imagess).forEach((img) => {
-            img.onload = () => {
-                loadedImagesCount++;
-                checkAllLoaded();
-            };
-        
-            img.onerror = () => {
-                loadedImagesCount++;
-                checkAllLoaded(); // Count failed loads as complete
-            };
-        });
-        
-        // Load YouTube video
-        Array.from(youtubeVideo).forEach((video) => {
-            // If using an iframe, consider using the YouTube IFrame API
-            video.onloadeddata = () => {
-                loadedImagesCount++;
-                checkAllLoaded();
-            };
-        
-            video.onerror = () => {
-                loadedImagesCount++;
-                checkAllLoaded(); // Count failed loads as complete
-            };
-        });
+    }, 10); // Small timeout to allow display change to take effect
+}
+
+// Function to hide loading animation
+function hideLoadingAnimation() {
+    loadingAnimation.style.opacity = '0'; // Fade out
+    setTimeout(() => {
+        loadingAnimation.style.display = 'none'; // Hide after fade out
+    }, 300); // Match this timeout with the transition duration
+}
+
+// Check initial connection status
+if (navigator.onLine) {
+    showLoadingAnimation(); // Show if online
+} else {
+    hideLoadingAnimation(); // Hide if offline
+}
+
+// Listen for online and offline events
+window.addEventListener('online', () => {
+    console.log("Browser is back online. Showing loading animation...");
+    showLoadingAnimation();
+});
+
+window.addEventListener('offline', () => {
+    console.log("Browser is offline. Hiding loading animation...");
+    hideLoadingAnimation();
+});
+
+// Load images
+let loadedImagesCount = 0;
+const totalImages = imagess.length;
+const totalItems = totalImages + 1; // +1 for the YouTube video
+
+// Function to check if all items are loaded
+function checkAllLoaded() {
+    if (loadedImagesCount === totalItems) {
+        hideLoadingAnimation(); // Hide loading animation when all items are loaded
+    }
+}
+
+// Load images
+Array.from(imagess).forEach((img) => {
+    img.onload = () => {
+        loadedImagesCount++;
+        checkAllLoaded();
+    };
+
+    img.onerror = () => {
+        loadedImagesCount++;
+        checkAllLoaded(); // Count failed loads as complete
+    };
+});
+
+// Load YouTube video (placeholder)
+Array.from(youtubeVideo).forEach((video) => {
+    // Simulate loading for the YouTube video
+    setTimeout(() => {
+        loadedImagesCount++;
+        checkAllLoaded();
+    }, 1000); // Simulate a delay for loading
+});
